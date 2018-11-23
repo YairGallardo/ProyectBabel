@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WaveController : MonoBehaviour {
+public class WavesController : MonoBehaviour {
 
     ///////////////////////// Configuracion oleadas //////////////////////////////////////////////////////////////////////
 
@@ -11,7 +11,7 @@ public class WaveController : MonoBehaviour {
     public float bossTime;          //Tiempo entre que se spawnea el boss y pierdes.
     public float maxTime;           //Tiempo total (suma de los anteriores)
     public GameObject[] waves;      //objeto que contiene las oleadas. se activan para que la oleada aparezca
-
+    public GameObject Boss;
 
     //////////////////////////////  UI//////////////////////////////////////////////////////////////////////////
 
@@ -55,7 +55,6 @@ public class WaveController : MonoBehaviour {
         if (start)
         {
             actualTime -= Time.deltaTime;
-
             if (actualWaveTime <= 0)
             {
                 if (nextWave <= totalWaves - 1)
@@ -74,21 +73,18 @@ public class WaveController : MonoBehaviour {
                     {
                         boss = true;
                         //invocar boss
+                        Boss.SetActive(true);
                         actualWaveTime = bossTime;
                     }
                 }
-
-
             }
             else
             {
                 actualWaveTime -= Time.deltaTime;
             }
-
             waveTimeText.text = Mathf.Round(actualWaveTime) + "";
             maxTimeText.text = Mathf.Round(actualTime) + "";
             waveSlider.value = actualTime;
-
         }
         else
         {
