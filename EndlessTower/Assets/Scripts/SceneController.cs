@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class WavesController : MonoBehaviour {
+public class SceneController : MonoBehaviour {
 
     ///////////////////////// Configuracion oleadas //////////////////////////////////////////////////////////////////////
 
@@ -20,17 +20,23 @@ public class WavesController : MonoBehaviour {
     public Text waveTimeText;
     public Slider waveSlider;
 
-    ///////////////////////////////// Debug //////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    public float actualTime;       //Cuenta regresiva del tiempo total
-    public float actualWaveTime;   //tiempo restante para la siguiente oleada
-    public float actualDelay;      //Sirve para iniciar la primera oleada 
-    public int nextWave;          //almacena la siguiente oleada que debe spawnearse 
-    public bool start;
-    public int totalWaves;
-    public bool boss = false;
+     float actualTime;       //Cuenta regresiva del tiempo total
+     float actualWaveTime;   //tiempo restante para la siguiente oleada
+     float actualDelay;      //Sirve para iniciar la primera oleada 
+     int nextWave;          //almacena la siguiente oleada que debe spawnearse 
+     bool start;
+     int totalWaves;
+     bool boss = false;
 
-    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    public PlayerMovment heroe;
+
+
+
+
+
 
 	void Start () {
         totalWaves = waves.Length;
@@ -46,6 +52,7 @@ public class WavesController : MonoBehaviour {
         waveTimeText.text = waveTime.ToString();
         waveSlider.maxValue = maxTime;
         waveSlider.value = maxTime;
+        heroe.enabled = true;
 
 
 	}

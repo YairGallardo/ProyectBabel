@@ -7,17 +7,43 @@ public class BasicEnemy : MonoBehaviour {
     public Transform heroe;
     public int vel;
     public Rigidbody body;
-
+    public float followTime = 2f;
+    float actualTime;
+    bool follow;
 
 	// Use this for initialization
 	void Start () {
-        body = gameObject.GetComponent<Rigidbody>(); 
+        body = gameObject.GetComponent<Rigidbody>();
+        actualTime = followTime;
+        follow = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector3.MoveTowards(transform.position, heroe.position, vel*Time.deltaTime);
-        
+
+        if (follow)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, heroe.position, vel * Time.deltaTime);
+            transform.LookAt(new Vector3 (heroe.position.x, transform.position.y,heroe.position.z));
+        }
+
+
+        if (actualTime <= 0)
+        {
+            if (Random.Range(0, 100) > 50)
+            {
+                follow = true;
+            }
+            else {
+                follow = false;
+            }
+
+            actualTime = followTime;
+            
+        }
+        else {
+            actualTime -= Time.deltaTime;
+        }
     }
 
 
