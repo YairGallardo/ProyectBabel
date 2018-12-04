@@ -92,6 +92,12 @@ public class SceneController : MonoBehaviour {
             waveTimeText.text = Mathf.Round(actualWaveTime) + "";
             maxTimeText.text = Mathf.Round(actualTime) + "";
             waveSlider.value = actualTime;
+
+
+            if (checkWaves())
+            {
+                FindObjectOfType<LevelMenuButtons>().winMenu.SetActive(true);
+            }
         }
         else
         {
@@ -104,4 +110,21 @@ public class SceneController : MonoBehaviour {
             }
         }
 	}
+
+
+    bool checkWaves()
+    {
+        bool superado = true;
+        for (int i =0; i < waves.Length; i++) {
+            if (waves[i].GetComponent<Wave>().defeat == false) {
+                superado = false;
+            }
+        }
+
+       /* if (Boss.transform.childCount > 0) {
+            superado = false;
+        }*/
+        Debug.Log(superado);
+        return superado;
+    }
 }

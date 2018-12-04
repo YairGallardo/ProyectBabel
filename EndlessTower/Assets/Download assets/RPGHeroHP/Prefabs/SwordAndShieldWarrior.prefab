@@ -97,7 +97,9 @@ GameObject:
   - component: {fileID: 95705065244281734}
   - component: {fileID: 54324606315250242}
   - component: {fileID: 136810002750727240}
+  - component: {fileID: 65040050913588020}
   - component: {fileID: 114577881665249860}
+  - component: {fileID: 114424234670718106}
   m_Layer: 0
   m_Name: SwordAndShieldWarrior
   m_TagString: Player
@@ -1258,7 +1260,7 @@ Transform:
   - {fileID: 4259074467877230}
   m_Father: {fileID: 4535497025091348}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 32.347557, y: -66.91289, z: 123.739685}
+  m_LocalEulerAnglesHint: {x: 29.494637, y: -98.498314, z: 82.55032}
 --- !u!4 &4159922829141340
 Transform:
   m_ObjectHideFlags: 1
@@ -1472,7 +1474,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4422499040435444}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.758248, y: 170.75923, z: -167.12192}
+  m_LocalEulerAnglesHint: {x: 4.2258663, y: 175.95709, z: 177.40273}
 --- !u!4 &4296807327348208
 Transform:
   m_ObjectHideFlags: 1
@@ -1525,7 +1527,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4197080144757016}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -8.600666, y: -12.655118, z: -2.5958328}
+  m_LocalEulerAnglesHint: {x: -8.528931, y: -7.476636, z: 3.5810761}
 --- !u!4 &4380534525039256
 Transform:
   m_ObjectHideFlags: 1
@@ -1737,8 +1739,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1744451592480374}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.050604105}
+  m_LocalRotation: {x: -0.7071068, y: -0.000000029802326, z: -0.000000029802326, w: 0.7071068}
+  m_LocalPosition: {x: 0.00000022165486, y: 0, z: -0.050603658}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4555431218768770}
@@ -1800,8 +1802,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045760434234174}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.561665, y: -5.943017e-17, z: 2.2840185}
+  m_LocalRotation: {x: -0, y: 0.8654273, z: -0, w: -0.5010344}
+  m_LocalPosition: {x: -44.82, y: 0.27900004, z: 0.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4869102127988924}
@@ -1814,7 +1816,7 @@ Transform:
   - {fileID: 4802734288182052}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 240.137, z: 0}
 --- !u!4 &4604535636071692
 Transform:
   m_ObjectHideFlags: 1
@@ -1896,7 +1898,7 @@ Transform:
   - {fileID: 4380534525039256}
   m_Father: {fileID: 4535497025091348}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -53.259422, y: 124.78749, z: -98.03234}
+  m_LocalEulerAnglesHint: {x: -35.309864, y: 75.66968, z: -24.138006}
 --- !u!4 &4705994256264460
 Transform:
   m_ObjectHideFlags: 1
@@ -2233,14 +2235,26 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045760434234174}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!65 &65040050913588020
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045760434234174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.79, z: 1}
+  m_Center: {x: 0, y: 1.02, z: 1.27}
 --- !u!95 &95705065244281734
 Animator:
   serializedVersion: 3
@@ -2259,6 +2273,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114424234670718106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1045760434234174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa82e79002f3c784ca5d96322890f3d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!114 &114577881665249860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2270,7 +2296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48a2bea63c254c54e8331521e91ed8f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  moveSpeed: 7
   joystick: {fileID: 0}
 --- !u!136 &136810002750727240
 CapsuleCollider:

@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114692535605056536}
   m_Layer: 0
   m_Name: JellyMonster-Yellow
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -395,3 +395,4 @@ MonoBehaviour:
   vel: 5
   body: {fileID: 0}
   followTime: 10
+  atackDist: 2

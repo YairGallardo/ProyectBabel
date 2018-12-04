@@ -7,7 +7,7 @@ public class Wave : MonoBehaviour {
     public GameObject indicadorOleada;      //Objeto que contiene la imagen que representa las oleadas
     public Animator anim;                   //Animator del objeto anterior
 
-    bool defeat = false;
+   public bool defeat = false;
 
     void OnEnable() {
         if (anim == null) {
