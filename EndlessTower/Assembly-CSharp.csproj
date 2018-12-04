@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\RotarPersonaje.cs" />
+     <Compile Include="Assets\Scripts\AccionMenuDos.cs" />
      <Compile Include="Assets\Scripts\AccionMenuPrincipal.cs" />
      <Compile Include="Assets\Scripts\BasicEnemy.cs" />
      <Compile Include="Assets\Scripts\LoadScene.cs" />
