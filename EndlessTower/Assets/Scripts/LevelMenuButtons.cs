@@ -48,6 +48,11 @@ public class LevelMenuButtons : MonoBehaviour {
     {
         pauseMenu.SetActive(false);
     }
+
+    public void ganar()
+    {
+        winMenu.SetActive(true);
+    }
 }
 
 
