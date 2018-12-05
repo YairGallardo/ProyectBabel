@@ -25,7 +25,7 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play2, 0);
         Destroy(play3, 0);
-        play1 = Instantiate(player1, new Vector3(-8.1f, 18.9f, 245.83f), Quaternion.identity) as GameObject;
+        play1 = Instantiate(player1, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
         botonAnterior.SetActive(false);
         botonSiguiente.SetActive(true);
         botonAnterior1.SetActive(false);
@@ -37,7 +37,7 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play3, 0);
-        play2 = Instantiate(player2, new Vector3(-8.1f, 18.9f, 245.83f), Quaternion.identity) as GameObject;
+        play2 = Instantiate(player2, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
         botonSiguiente.SetActive(false);
         botonSiguiente1.SetActive(true);
         botonAnterior.SetActive(true);
@@ -48,7 +48,7 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play3, 0);
-        play2 = Instantiate(player2, new Vector3(-8.1f, 18.9f, 245.83f), Quaternion.identity) as GameObject;
+        play2 = Instantiate(player2, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
         botonAnterior.SetActive(true);
         botonAnterior1.SetActive(false);
         botonSiguiente.SetActive(false);
@@ -60,7 +60,7 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play2, 0);
-        play3 = Instantiate(player3, new Vector3(-8.1f, 18.9f, 245.83f), Quaternion.identity) as GameObject;
+        play3 = Instantiate(player3, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
         botonAnterior.SetActive(false);
         botonAnterior1.SetActive(true);
         botonSiguiente.SetActive(false);
@@ -74,7 +74,7 @@ public class SistemaBotones : MonoBehaviour
         botonAnterior.SetActive(false);
         botonAnterior1.SetActive(false);
         botonSiguiente1.SetActive(false);
-        play1 = Instantiate(player1, new Vector3(-8.1f, 18.9f, 245.83f), Quaternion.identity) as GameObject;
+        play1 = Instantiate(player1, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
     }
 
 
