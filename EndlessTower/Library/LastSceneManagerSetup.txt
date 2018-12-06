@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MenuSegundo.unity
+- path: Assets/Scenes/MenuArmas.unity
   isLoaded: 1
   isActive: 1

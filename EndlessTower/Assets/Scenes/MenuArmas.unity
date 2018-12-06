@@ -193,9 +193,12 @@ MonoBehaviour:
   botonSiguiente1: {fileID: 487448205}
   botonAnterior1: {fileID: 1963351284}
   Jugar: {fileID: 1089389442}
-  player1: {fileID: 1459257693651166, guid: 802dc6e3247c92e4784dd6342a0a0d9e, type: 2}
-  player2: {fileID: 1076306918422000, guid: 2eb7b12df3351ec499e137b511285199, type: 2}
-  player3: {fileID: 1907970470789760, guid: 1cbf1cb822dc72a48abac88b9d5455a2, type: 2}
+  player1: {fileID: 1349941255396662, guid: 498bbc278f62fe14c9ca10bac897715f, type: 2}
+  player2: {fileID: 1628028191049126, guid: c78c73f3ccc346049b66e058045afd4d, type: 2}
+  player3: {fileID: 1472685015999216, guid: 013e7758eb4634a41a7fdfbe51ce9ec9, type: 2}
+  player1A: {fileID: 1026735491308178, guid: 6d60558c5dc8d0f4d8d9f94b8b3c1667, type: 2}
+  player2A: {fileID: 1725238630250500, guid: 3e825435494f7f34494d4cea6a1f43b0, type: 2}
+  player3A: {fileID: 1092242425655660, guid: b22c62f180e65f342aff0260fa0152e6, type: 2}
 --- !u!1 &180180739
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +557,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -578,7 +581,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 932315322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 1, z: -18.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1009,8 +1012,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1456730333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 0.62, z: 1.5}
-  m_LocalScale: {x: 2.406282, y: 2.6162438, z: 1}
+  m_LocalPosition: {x: 0.104, y: 1.071, z: 1.5}
+  m_LocalScale: {x: 1.7465756, y: 1.7279768, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5

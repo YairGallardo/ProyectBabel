@@ -6,7 +6,6 @@ using System.Collections.Generic;
 [RequireComponent(typeof(CharacterController))]
 public class SistemaBotones : MonoBehaviour
 {
-
     public GameObject botonSiguiente;
     public GameObject botonAnterior;
     public GameObject botonSiguiente1;
@@ -20,12 +19,26 @@ public class SistemaBotones : MonoBehaviour
     public GameObject player3;
     GameObject play3;
 
+    public GameObject player1A;
+    GameObject player_Arma1;
+    public GameObject player2A;
+    GameObject player_Arma2;
+    public GameObject player3A;
+    GameObject player_Arma3;
+
+
     public void ActivarAnterior()
     {
 
         Destroy(play2, 0);
         Destroy(play3, 0);
-        play1 = Instantiate(player1, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
+        Destroy(player_Arma2, 0);
+        Destroy(player_Arma3, 0);
+
+        play1 = Instantiate(player1, new Vector3(3.95f, 3.62f, -0.98f), Quaternion.identity) as GameObject;
+
+        player_Arma1 = Instantiate(player1A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
+
         botonAnterior.SetActive(false);
         botonSiguiente.SetActive(true);
         botonAnterior1.SetActive(false);
@@ -37,7 +50,13 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play3, 0);
-        play2 = Instantiate(player2, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
+        Destroy(player_Arma1, 0);
+        Destroy(player_Arma3, 0);
+
+        play2 = Instantiate(player2, new Vector3(3.95f, 2.73f, -0.98f), Quaternion.identity) as GameObject;
+
+        player_Arma2 = Instantiate(player2A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
+
         botonSiguiente.SetActive(false);
         botonSiguiente1.SetActive(true);
         botonAnterior.SetActive(true);
@@ -48,7 +67,13 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play3, 0);
-        play2 = Instantiate(player2, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
+        Destroy(player_Arma1, 0);
+        Destroy(player_Arma3, 0);
+
+        play2 = Instantiate(player2, new Vector3(3.95f, 2.73f, -0.98f), Quaternion.identity) as GameObject;
+
+        player_Arma2 = Instantiate(player2A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
+
         botonAnterior.SetActive(true);
         botonAnterior1.SetActive(false);
         botonSiguiente.SetActive(false);
@@ -60,7 +85,12 @@ public class SistemaBotones : MonoBehaviour
 
         Destroy(play1, 0);
         Destroy(play2, 0);
-        play3 = Instantiate(player3, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
+        Destroy(player_Arma1, 0);
+        Destroy(player_Arma2, 0);
+
+        play3 = Instantiate(player3, new Vector3(4,4.739f,-0.98f), Quaternion.identity) as GameObject;
+
+        player_Arma3 = Instantiate(player3A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
         botonAnterior.SetActive(false);
         botonAnterior1.SetActive(true);
         botonSiguiente.SetActive(false);
@@ -74,7 +104,9 @@ public class SistemaBotones : MonoBehaviour
         botonAnterior.SetActive(false);
         botonAnterior1.SetActive(false);
         botonSiguiente1.SetActive(false);
-        play1 = Instantiate(player1, new Vector3(3.95f, 1.49f, -0.98f), Quaternion.identity) as GameObject;
+        play1 = Instantiate(player1, new Vector3(3.95f, 3.62f, -0.98f), Quaternion.identity) as GameObject;
+
+        player_Arma1 = Instantiate(player1A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
     }
 
 
