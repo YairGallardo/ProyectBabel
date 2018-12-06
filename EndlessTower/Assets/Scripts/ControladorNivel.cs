@@ -6,7 +6,7 @@ public class ControladorNivel : MonoBehaviour {
 
     [Header("Scripts")]
     public ControladorOleadas controladorOleadas;
-    public Player jugadorAcciones;
+    public Player jugador;
     public PlayerMovment jugadorMov;
     public ControladorMenusNivel controladorMenus;  
 
@@ -24,12 +24,14 @@ public class ControladorNivel : MonoBehaviour {
     bool tiempoAgotado;
     bool nivelSuperado;
 
+    bool jugadorMuerto;
 
 	void Start () {
         tiempoAgotado = false;
         nivelSuperado = false;
+        jugadorMuerto = false;
         controladorOleadas.enabled  = false;
-        jugadorAcciones.enabled     = false;
+        jugador.enabled     = false;
         jugadorMov.enabled          = false;
         nivelIniciado = false;
         tiempoActual = tiempoEsperaInicio;
@@ -38,14 +40,18 @@ public class ControladorNivel : MonoBehaviour {
 	
 	void Update () {
         if (nivelIniciado){
-            if (!nivelSuperado && !tiempoAgotado) {
+            if (!nivelSuperado && !tiempoAgotado && !jugadorMuerto) {
                 if (controladorOleadas.nivelCompletado()) {
                     nivelSuperado = true;
                     nivelCompletado();
 
-                } else if(controladorOleadas.tiempoTerminado()){
+                } else if (controladorOleadas.tiempoTerminado()) {
                     tiempoAgotado = true;
                     tiempoNivelAgotado();
+                } else if (jugador.jugadorEstaMuerto()) {
+                    jugadorMuerto = true;
+                    jugadorDerrotado();
+
                 }
             }
         }else {
@@ -65,7 +71,7 @@ public class ControladorNivel : MonoBehaviour {
 
     void iniciarNivel() {
         controladorOleadas.enabled = true;
-        jugadorAcciones.enabled = true;
+        jugador.enabled = true;
         jugadorMov.enabled = true;
         t_tiempoEsperaInicio.enabled = false;
         nivelIniciado = true;
@@ -79,5 +85,9 @@ public class ControladorNivel : MonoBehaviour {
         controladorMenus.activarMenuDerrota();
     }
 
+    void jugadorDerrotado()
+    {
+        controladorMenus.activarMenuDerrota();
+    }
 
 }

@@ -3,24 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-    PlayerMovment move;
-    public int health=100;
+
+    [Header("Estadisticas jugador")]
+    public int vidaMaxima=100;
+
+
+    //
     Animator anim;
+    PlayerMovment move;
+
+    //variables de control
+    public int vidaActual;
+    private bool jugadorMuerto;
 
 
 
-	// Use this for initialization
-	void Start () {
+
+
+
+
+    // Use this for initialization
+    void Start () {
         move = gameObject.GetComponent<PlayerMovment>();
         anim = gameObject.GetComponent<Animator>();
+        vidaActual = vidaMaxima;
+        jugadorMuerto = false;
 	}
 
     void Update()
     {
-        if (health <= 0 ) {
+        if (vidaActual <= 0 ) {
 
             PlayerDie();
-
+            jugadorMuerto = true;
         }   
     }
 
@@ -72,6 +87,8 @@ public class Player : MonoBehaviour {
         }
     }
 
-
+    public bool jugadorEstaMuerto() {
+        return jugadorMuerto;
+    }
 
 }
