@@ -2279,19 +2279,21 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045760434234174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa82e79002f3c784ca5d96322890f3d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  vidaMaxima: 100
+  puntosAtaque: 20
+  vidaActual: 0
 --- !u!114 &114577881665249860
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1045760434234174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 48a2bea63c254c54e8331521e91ed8f8, type: 3}
   m_Name: 

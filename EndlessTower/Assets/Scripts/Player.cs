@@ -1,12 +1,13 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
     [Header("Estadisticas jugador")]
     public int vidaMaxima=100;
-
+    public int puntosAtaque;
+    public Slider sliderVida;
 
     //
     Animator anim;
@@ -28,6 +29,8 @@ public class Player : MonoBehaviour {
         anim = gameObject.GetComponent<Animator>();
         vidaActual = vidaMaxima;
         jugadorMuerto = false;
+        sliderVida.maxValue = vidaMaxima;
+        sliderVida.value = vidaMaxima;
 	}
 
     void Update()
@@ -82,13 +85,26 @@ public class Player : MonoBehaviour {
     private void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Enemy") {
-            Destroy(col.gameObject);
+            col.gameObject.GetComponent<BasicEnemy>().recibirDaño(puntosAtaque);
 
         }
     }
 
     public bool jugadorEstaMuerto() {
         return jugadorMuerto;
+    }
+
+    public void recibirDaño(int daño)
+    {
+        vidaActual -= daño;
+        sliderVida.value = vidaActual;
+
+
+        if (vidaActual <= 0)
+        {
+            //destruir;
+            PlayerDie();
+        }
     }
 
 }

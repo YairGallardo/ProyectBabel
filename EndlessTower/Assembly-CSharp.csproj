@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\AccionMenuDos.cs" />
     <Compile Include="Assets\Scripts\AccionMenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\BasicEnemy.cs" />
+    <Compile Include="Assets\Scripts\ControladorCamara.cs" />
     <Compile Include="Assets\Scripts\ControladorMenusNivel.cs" />
     <Compile Include="Assets\Scripts\ControladorNivel.cs" />
     <Compile Include="Assets\Scripts\ControladorOleada.cs" />

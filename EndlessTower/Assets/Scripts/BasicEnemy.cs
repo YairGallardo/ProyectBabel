@@ -1,16 +1,30 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BasicEnemy : MonoBehaviour {
 
-    public Transform heroe;
+
+    [Header("Estadisticas enemigo")]
+    public int vidaMaxima;
     public int vel;
-    public Rigidbody body;
     public float followTime = 2f;
+    public float atackDist;
+
+    [Header("Elementos UI")]
+    public Slider sbarraDeVida;
+
+
+
+    //control
+    int vidaActual;
+
+
+    public Transform heroe;
+    public Rigidbody body;
     float actualTime;
     bool follow;
-    public float atackDist;
+    
     Animator anim;
 
 	// Use this for initialization
@@ -19,6 +33,10 @@ public class BasicEnemy : MonoBehaviour {
         actualTime = followTime;
         follow = false;
         anim = gameObject.GetComponent<Animator>();
+        vidaActual = vidaMaxima;
+        sbarraDeVida.maxValue = vidaMaxima;
+        sbarraDeVida.value = vidaMaxima;
+        
 	}
 	
 	// Update is called once per frame
@@ -84,6 +102,16 @@ public class BasicEnemy : MonoBehaviour {
 
     }
 
+    public void recibirDaño(int daño) {
+        vidaActual -= daño;
+        sbarraDeVida.value = vidaActual;
+
+
+        if (vidaActual <= 0) {
+            //destruir;
+            Destroy(gameObject);
+        }
+    }
 
 
 
