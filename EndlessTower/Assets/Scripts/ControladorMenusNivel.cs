@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ControladorMenusNivel : MonoBehaviour {
     [Header("Menús")]
@@ -21,11 +22,13 @@ public class ControladorMenusNivel : MonoBehaviour {
     }
 
     public void activarMenuVictoria(){
+        Time.timeScale = 0f;
         menuVictoria.SetActive(true);
         desactivarBotones();
     }
 
     public void activarMenuDerrota(){
+        Time.timeScale = 0f;
         menuDerrota.SetActive(true);
         desactivarBotones();
     }
@@ -47,6 +50,21 @@ public class ControladorMenusNivel : MonoBehaviour {
     }
 
 
+    public void repetirNvl() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void siguienteNvl() {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(siguienteNivel);
+    }
+
+    public void abandonarNvl()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(menuPrincipal);
+    }
 
 
 

@@ -18,7 +18,7 @@ public class BasicEnemy : MonoBehaviour {
 
     //control
     int vidaActual;
-
+    AudioSource audio;
 
     public Transform heroe;
     public Rigidbody body;
@@ -36,6 +36,7 @@ public class BasicEnemy : MonoBehaviour {
         vidaActual = vidaMaxima;
         sbarraDeVida.maxValue = vidaMaxima;
         sbarraDeVida.value = vidaMaxima;
+        audio = GetComponent<AudioSource>();
         
 	}
 	
@@ -51,14 +52,26 @@ public class BasicEnemy : MonoBehaviour {
 
             if (distancia <= atackDist)
             {
-                anim.SetBool("atack",true);
+                anim.SetBool("atack", true);
                 StartCoroutine("stopAtack");
 
             }
-            else {
+            else
+            {
                 transform.position = Vector3.MoveTowards(transform.position, heroe.position, vel * Time.deltaTime);
             }
-            transform.LookAt(new Vector3 (heroe.position.x, transform.position.y,heroe.position.z));
+            transform.LookAt(new Vector3(heroe.position.x, transform.position.y, heroe.position.z));
+
+            if (!audio.isPlaying) {
+                audio.Play();
+            }
+            
+        }
+        else {
+            if (audio.isPlaying)
+            {
+                audio.Stop();
+            }
         }
 
 

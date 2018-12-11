@@ -12,7 +12,7 @@ public class Player : MonoBehaviour {
     //
     Animator anim;
     PlayerMovment move;
-
+    AudioSource audio;
     //variables de control
     public int vidaActual;
     private bool jugadorMuerto;
@@ -23,9 +23,11 @@ public class Player : MonoBehaviour {
 
 
 
+
     // Use this for initialization
     void Start () {
         move = gameObject.GetComponent<PlayerMovment>();
+        audio = gameObject.GetComponent<AudioSource>();
         anim = gameObject.GetComponent<Animator>();
         vidaActual = vidaMaxima;
         jugadorMuerto = false;
@@ -48,6 +50,9 @@ public class Player : MonoBehaviour {
 
 
     public void BasicAtack() {
+
+        
+        audio.Play();
         anim.SetBool("bAtack",true);
         StartCoroutine("stopBAtack");
     }
