@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Piso0.unity
-  isLoaded: 1
-  isActive: 1
