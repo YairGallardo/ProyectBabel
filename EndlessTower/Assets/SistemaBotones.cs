@@ -55,17 +55,19 @@ public class SistemaBotones : MonoBehaviour
         player_Arma1 = Instantiate(player1A, new Vector3(-4.37f, -0.9f, -3.03f), Quaternion.identity) as GameObject;
         */
 
+
+
+        botonAnterior.SetActive(false);
+        botonSiguiente.SetActive(true);
+        botonAnterior1.SetActive(false);
+        botonSiguiente1.SetActive(false);
+
         armas[0].SetActive(true);
         personajeArmas[0].SetActive(true);
         armas[1].SetActive(false);
         personajeArmas[1].SetActive(false);
         armas[2].SetActive(false);
         personajeArmas[2].SetActive(false);
-
-        botonAnterior.SetActive(false);
-        botonSiguiente.SetActive(true);
-        botonAnterior1.SetActive(false);
-        botonSiguiente1.SetActive(false);
     }
 
     public void ActivarSiguiente()

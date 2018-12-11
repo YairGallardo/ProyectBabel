@@ -1,0 +1,2 @@
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache

@@ -353,8 +353,8 @@ MonoBehaviour:
   Jugar: {fileID: 1089389442}
   personajeArmas:
   - {fileID: 1715870839}
-  - {fileID: 1888583108}
-  - {fileID: 1703400889}
+  - {fileID: 872832947}
+  - {fileID: 527375012}
   armas:
   - {fileID: 1409539736}
   - {fileID: 1888583108}
