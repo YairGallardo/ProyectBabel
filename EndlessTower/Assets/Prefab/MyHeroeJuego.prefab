@@ -173,7 +173,6 @@ GameObject:
   - component: {fileID: 95665197559728292}
   - component: {fileID: 54917430353319930}
   - component: {fileID: 136911037769736932}
-  - component: {fileID: 65528605820119052}
   - component: {fileID: 114135857095709542}
   - component: {fileID: 114166800289143854}
   - component: {fileID: 82609929856236682}
@@ -1487,8 +1486,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1138832757201686}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -348.23822, y: 167.61382, z: -0.92}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 5.1599073, y: -4.0835996, z: -4.4919252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4012074692937354}
@@ -1501,7 +1500,7 @@ Transform:
   - {fileID: 4376953081038458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4376953081038458
 Transform:
   m_ObjectHideFlags: 1
@@ -2200,18 +2199,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!65 &65528605820119052
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1138832757201686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.79, z: 1}
-  m_Center: {x: 0, y: 1.02, z: 1.27}
 --- !u!82 &82609929856236682
 AudioSource:
   m_ObjectHideFlags: 1
