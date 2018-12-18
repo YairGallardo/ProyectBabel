@@ -20083,7 +20083,7 @@ Prefab:
     - target: {fileID: 114107937042741900, guid: 82e3980033b58904a847eb0120a15080,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: repetirNvl
+      value: siguienteNvl
       objectReference: {fileID: 0}
     - target: {fileID: 114248178643847532, guid: 82e3980033b58904a847eb0120a15080,
         type: 2}
