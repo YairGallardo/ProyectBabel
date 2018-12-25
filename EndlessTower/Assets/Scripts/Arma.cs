@@ -7,6 +7,7 @@ public class Arma : MonoBehaviour {
     public string nombre;
     public int ataque;
     public string descripcion;
+    public string precio;
 
     [Header("ElementosVisuales")]
     public Sprite imagenArma;

@@ -1643,7 +1643,6 @@ MonoBehaviour:
   - {fileID: 1776420767694710, guid: ddd7ceec04a4d43418db06222bdc0ce4, type: 2}
   - {fileID: 1619967392673246, guid: 7815cd21bb32bf244be36cc283f1dd73, type: 2}
   - {fileID: 1387491477515614, guid: 90d3cd93e02d34d429d6151e46f25b0b, type: 2}
-  - {fileID: 1808402761191080, guid: a4e0be36e449b6c419cd07022cc43519, type: 2}
   posArmaHeroe: {fileID: 298504828}
   anim: {fileID: 1596235732}
   b_anterior: {fileID: 1734894436}

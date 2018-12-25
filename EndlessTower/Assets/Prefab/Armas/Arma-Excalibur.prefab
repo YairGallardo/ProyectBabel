@@ -171,6 +171,7 @@ MonoBehaviour:
   nombre: Excalibur
   ataque: 1000
   descripcion: 
+  precio: 5000
   imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1977052797631454}
