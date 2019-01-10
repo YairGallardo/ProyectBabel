@@ -53,8 +53,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4758762490333174}
-  - component: {fileID: 114320369217531322}
   - component: {fileID: 65369126416859542}
+  - component: {fileID: 114320369217531322}
   m_Layer: 0
   m_Name: Arma-Espada_Congelada
   m_TagString: Untagged
@@ -168,9 +168,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f278198510e50be43bc3ecd8f6734905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codigo: 
   nombre: Filo Helado
-  ataque: 30
   descripcion: 
+  ataque: 30
+  elemento: 0
+  probEfecto: 5
   imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1415332983240096}

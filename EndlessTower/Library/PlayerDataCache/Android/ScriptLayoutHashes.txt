@@ -1,14 +1,14 @@
 Android
 PlayerPath?
-C:/Users/Vinzo/Desktop/TorreDeBabelv0.5.apk
+C:/Users/Vinzo/Desktop/TorreDeBabelv0.51.apk
 SceneListBegin?
 Assets/Scenes/PantallaDeTitulo.unity
 Assets/Scenes/MenuPrincipal.unity
 Assets/Scenes/MenuArmas.unity
 Assets/Scenes/MenuTienda.unity
 Assets/Scenes/Piso0.unity
-Assets/Scenes/Piso2.unity
 Assets/Scenes/Piso1.unity
+Assets/Scenes/Piso2.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 fa1925120e4302769343d342bab8ed16 Assembly-CSharp.dll:.ControladorMenusNivel

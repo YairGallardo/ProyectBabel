@@ -36,8 +36,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4068000436350276}
-  - component: {fileID: 114821756557173472}
   - component: {fileID: 65710164802727898}
+  - component: {fileID: 114821756557173472}
   m_Layer: 0
   m_Name: Arma-Espada_Demoniaca
   m_TagString: Untagged
@@ -216,9 +216,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f278198510e50be43bc3ecd8f6734905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codigo: 
   nombre: Espada Demoniaca
-  ataque: 50
   descripcion: 
+  ataque: 50
+  elemento: 0
+  probEfecto: 5
   imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1479580209752852}
