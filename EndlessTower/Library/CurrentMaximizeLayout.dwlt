@@ -155,24 +155,24 @@ MonoBehaviour:
     height: 747
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: e4fbffff00000000
+    scrollPos: {x: 0, y: 118}
+    m_SelectedIDs: 24380000
+    m_LastClickedID: 14372
+    m_ExpandedIDs: e4fbffff000000001c380000a23800001e390000b2390000b6390000f8390000283a0000ac3a0000c03a0000cc3a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: FlechaPrecio
+      m_OriginalName: FlechaPrecio
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 14774
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
@@ -285,9 +285,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 212.89366, y: 142.78601, z: 3.9741695}
+    m_Target: {x: 253.15118, y: 135.46646, z: 4.9803004}
     speed: 2
-    m_Value: {x: 212.89366, y: 142.78601, z: 3.9741695}
+    m_Value: {x: 253.15118, y: 135.46646, z: 4.9803004}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -319,9 +319,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 296.14957
+    m_Target: 195.67776
     speed: 2
-    m_Value: 296.14957
+    m_Value: 195.67776
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -470,19 +470,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Sprite
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sprite
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ec2e0000
-    m_LastClickedID: 12012
+    m_SelectedIDs: ce2e0000
+    m_LastClickedID: 11982
     m_ExpandedIDs: 00000000ae2a0000202f0000222f00002e330000cc340000f2350000fc350000ec3b0000ee3b0000f03b0000f23b0000f43b0000f63b0000f83b0000fa3b0000fc3b0000fe3b0000003c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -536,10 +536,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000045900007e860000748600005874000000000000f20ffdff1412fdff4c16fdfff413fdff6e310000b02a0000a83500000e460000
+    m_SelectedInstanceIDs: 24380000
+    m_LastClickedInstanceID: 14372
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000045900007e860000748600005874000000000000f20ffdff1412fdff4c16fdfff413fdff6e310000b02a0000a83500000e460000822e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
