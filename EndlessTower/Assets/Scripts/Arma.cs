@@ -8,8 +8,7 @@ public class Arma : MonoBehaviour {
     public string nombre;                           // Nombre del arma dentro del juego
     public string descripcion;                      // Descripcion "historia" del arma
     public int ataque;                              // Puntos de ataque del arma
-    public enum Elementos {Normal, Fuego, Hielo};   // Lista de Elementos posibles 
-    public Elementos elemento = Elementos.Normal;   // Elemento del Arma
+    public string elemento = "Normal";   // Elemento del Arma
     public int probEfecto;                          // % de que se active el efecto asociado al elemento del arma
                                                     // Ejm : 5% de quemar si es elemento Fuego.
     
@@ -28,7 +27,7 @@ public class Arma : MonoBehaviour {
         // si el arma es normal se enviara falso, ya que este tipo de armas no rpoducen efectos
         bool resp = false;
         int random = Random.Range(0,100);
-        if ((elemento != Elementos.Normal) && (probEfecto >= random)) {
+        if ((elemento != "Normal") && (probEfecto >= random)) {
             resp = true;
         }
         return resp;

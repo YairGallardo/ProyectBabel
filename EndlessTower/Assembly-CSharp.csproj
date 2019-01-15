@@ -71,6 +71,8 @@
     <Compile Include="Assets\Scripts\ActualizarBotin.cs" />
     <Compile Include="Assets\Scripts\Arma.cs" />
     <Compile Include="Assets\Scripts\Armas\EfectoArmaBasico.cs" />
+    <Compile Include="Assets\Scripts\ControladorBD.cs" />
+    <Compile Include="Assets\Scripts\ControladorCargaDeDatos.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorCamara.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorDatos.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorMenusNivel.cs" />
@@ -94,14 +96,32 @@
     <Compile Include="Assets\Scripts\Menus\AccionMenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Menus\BarraSuperior.cs" />
     <Compile Include="Assets\Scripts\Menus\LoadScene.cs" />
+    <Compile Include="Assets\Scripts\Personaje\ArmaActual.cs" />
     <Compile Include="Assets\Scripts\Personaje\Player.cs" />
     <Compile Include="Assets\Scripts\Personaje\PlayerMovment.cs" />
     <Compile Include="Assets\Scripts\Personaje\RotarPersonaje.cs" />
     <Compile Include="Assets\Simple UI\Samples\IconPreview.cs" />
     <Compile Include="Assets\SistemaBotones.cs" />
+    <Compile Include="Assets\Suriyun\Scripts\AnimatorController.cs" />
+    <Compile Include="Assets\Suriyun\Scripts\MouseOrbitImproved.cs" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+    <None Include="Assets\Suriyun\README.txt" />
     <None Include="Assets\Simple UI\Fonts\OFL.txt" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\CharaMain.cginc" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\CharaSkin.cginc" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
     <None Include="Assets\Download assets\FantasyEffectLitePack1\README 1.txt" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
     <None Include="Assets\Fonts\tower\towerruins.txt" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\CharaOutline.cginc" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\readme.txt" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+    <None Include="Assets\Suriyun\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
     <None Include="Assets\Download assets\Crates And Barrels Pack Volume 1 - Free Version\manual.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/Vinzo/Mis Cosas/Git/ProyectBabel/EndlessTower/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
@@ -309,6 +329,12 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>C:/Users/Vinzo/Mis Cosas/Git/ProyectBabel/EndlessTower/Assets/Plugins/sqlite-unity/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:/Users/Vinzo/Mis Cosas/Git/ProyectBabel/EndlessTower/Assets/Plugins/sqlite-unity/Plugins/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Vinzo/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

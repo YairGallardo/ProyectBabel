@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ControladorSeleccionArma : MonoBehaviour {
 
@@ -27,13 +28,14 @@ public class ControladorSeleccionArma : MonoBehaviour {
     public int armaSiguiente;
 
 
-
+    List<string[]> armasDetalle;
 
     void Start () {
-
+        ControladorBD cBD = new ControladorBD();
+        armasDetalle = cBD.obtenerInventario();
+        cargarPrefabs();
         b_anterior.SetActive(false);
         b_siguiente.SetActive(false);
-
         // seteo final botones y variables de control
         cantidadArmas = armas.Length;
         armaActual = armaAnterior = armaSiguiente = 0; //asumimos una lista con solo 1 arma por lo cual no hay sig ni anterior
@@ -41,14 +43,38 @@ public class ControladorSeleccionArma : MonoBehaviour {
             armaSiguiente = 1;  // vemos si existen mas de 1 arma 
         }
         // comprobamos si esxisten mas armas si es asi el boton siguiente sera habilitado
-
         if (armaSiguiente > armaActual) {
             b_siguiente.SetActive(true);
         }
-
-
         mostrarArma(0);
+    }
 
+    void cargarPrefabs() {
+
+        int cantArmas = armasDetalle.Count;
+        armas = new GameObject[cantArmas];
+        int index = 0;
+        foreach (string[] elemento in armasDetalle) {
+            // [0] = Codigo
+            // [1] = Nombre 
+            // [2] = Descripcion
+            // [3] = Elemento
+            // [4] = Daño
+            // [5] = Porcentaje
+            string codigo = elemento[0];
+            GameObject arma = Resources.Load(DatosPersistentes.rutaArmasPrefs + "/" + codigo) as GameObject;
+            Arma detalles = arma.GetComponent<Arma>();
+            detalles.nombre         = elemento[1];
+            detalles.descripcion    = elemento[2];
+            detalles.elemento       = elemento[3];
+            detalles.ataque         = int.Parse(elemento[4]);
+            detalles.probEfecto     = int.Parse(elemento[5]);
+
+            armas[index] = arma;
+            index++;
+        }
+
+        
     }
 
 
@@ -87,10 +113,13 @@ public class ControladorSeleccionArma : MonoBehaviour {
 
     void mostrarArma(int index) {
         Arma arma = armas[index].GetComponent<Arma>();
-
-
-        t_descArma.text = "Atk : "+arma.ataque;
         t_nombreArma.text = arma.nombre;
+
+        t_descArma.text = "Ataque   : " + arma.ataque + "\n" +
+                          "Elemento : " + arma.elemento + "\n" +
+                          "% efecto : " + arma.probEfecto + "%";
+
+
 
 
         imgArma.sprite = arma.imagenArma;

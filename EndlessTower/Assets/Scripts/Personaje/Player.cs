@@ -29,17 +29,14 @@ public class Player : MonoBehaviour {
     private float cdEspecialActual;
     private Arma myArma;
 
-
-
-
-    private void Awake()
-    {
-        equiparArma();
-    }
-
-
     // Use this for initialization
+
+
+  
+
+
     void Start () {
+        equiparArma();
         move = gameObject.GetComponent<PlayerMovment>();
         audio = gameObject.GetComponent<AudioSource>();
         anim = gameObject.GetComponent<Animator>();
@@ -100,7 +97,7 @@ public class Player : MonoBehaviour {
         if (cdBasicoActual >= cdAtaqueBasico) {
             myArma.ataqueInicio();
             cdBasicoActual = 0;
-            audio.Play();
+            //audio.Play();
             anim.SetBool("bAtack", true);
             StartCoroutine("stopBAtack");
         }
@@ -163,21 +160,29 @@ public class Player : MonoBehaviour {
     }
 
 
-    void equiparArma() {
+    void equiparArma()
+    {
         Debug.Log("Equipando arma");
 
         if (DatosPersistentes.arma != null)
         {
+            if (posicionEspada.childCount > 0)
+            {
+                foreach (Transform child in posicionEspada)
+                {
+                    GameObject.Destroy(child.gameObject);
+                }
+            }
+
+
             var armaTmp = Instantiate(DatosPersistentes.arma, posicionEspada.position, posicionEspada.rotation);
             Debug.Log(armaTmp.name);
             armaTmp.transform.parent = posicionEspada;
         }
-        else {
+        else
+        {
             Debug.Log("No hay arma en los datos persistentes");
         }
-
-
-        
     }
 
 }
