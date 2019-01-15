@@ -38,7 +38,7 @@ public class CodigoTienda : MonoBehaviour
 
     public void presionarInformacion_1()
     {
-        Arma_Tienda primeraArma = armas1.GetComponent<Arma_Tienda>();
+        Arma primeraArma = armas1.GetComponent<Arma>();
 
         panel_nombre.text = primeraArma.nombre;
 
@@ -117,7 +117,7 @@ public class CodigoTienda : MonoBehaviour
     void Start()
     {
         //-------------------------------------------------------------------------------
-        Arma_Tienda primeraArma = armas1.GetComponent<Arma_Tienda>();
+        Arma primeraArma = armas1.GetComponent<Arma>();
         D1_nombre.text = primeraArma.nombre;
         D1_precio.text = primeraArma.precio;
         //-------------------------------------------------------------------------------

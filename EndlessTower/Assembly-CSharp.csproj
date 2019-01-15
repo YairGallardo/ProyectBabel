@@ -70,6 +70,7 @@
     <Compile Include="Assets\Download assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\ActualizarBotin.cs" />
     <Compile Include="Assets\Scripts\Arma.cs" />
+    <Compile Include="Assets\Scripts\Arma_Tienda.cs" />
     <Compile Include="Assets\Scripts\Armas\EfectoArmaBasico.cs" />
     <Compile Include="Assets\Scripts\CodigoTienda.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorCamara.cs" />
