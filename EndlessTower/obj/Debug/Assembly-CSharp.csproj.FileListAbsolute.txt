@@ -168,3 +168,7 @@ C:\Users\Vinzo\Mis Cosas\Git\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp
 C:\Users\Vinzo\Mis Cosas\Git\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\Vinzo\Mis Cosas\Git\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.dll
 C:\Users\Vinzo\Mis Cosas\Git\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.dll
+C:\Users\Hector\Documents\GitHub\ProyectBabel\EndlessTower\obj\Debug\Assembly-CSharp.pdb

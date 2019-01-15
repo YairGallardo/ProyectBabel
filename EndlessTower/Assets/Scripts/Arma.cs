@@ -11,8 +11,8 @@ public class Arma : MonoBehaviour {
     public string elemento = "Normal";   // Elemento del Arma
     public int probEfecto;                          // % de que se active el efecto asociado al elemento del arma
                                                     // Ejm : 5% de quemar si es elemento Fuego.
-    
 
+    public string precio;
 
     [Header("ElementosVisuales")]
     public Sprite imagenArma;                       // Imagen que se muestra en la ventana de seleccion de arma
