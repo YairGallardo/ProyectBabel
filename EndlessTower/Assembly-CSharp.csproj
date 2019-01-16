@@ -72,8 +72,7 @@
     <Compile Include="Assets\Scripts\Arma.cs" />
     <Compile Include="Assets\Scripts\Armas\EfectoArmaBasico.cs" />
     <Compile Include="Assets\Scripts\CodigoTienda.cs" />
-    <Compile Include="Assets\Scripts\ControladorBD.cs" />
-    <Compile Include="Assets\Scripts\ControladorCargaDeDatos.cs" />
+    <Compile Include="Assets\Scripts\ControladorBaseDeArmas.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorCamara.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorDatos.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorMenusNivel.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets\Scripts\Controladores\ControladorOleada.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorOleadas.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorSeleccionArma.cs" />
+    <Compile Include="Assets\Scripts\DatosDeArma.cs" />
     <Compile Include="Assets\Scripts\DatosPersistentes.cs" />
     <Compile Include="Assets\Scripts\Enemigos\BasicEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemigos\Enemigo.cs" />

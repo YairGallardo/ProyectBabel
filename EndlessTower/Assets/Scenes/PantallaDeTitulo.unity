@@ -363,13 +363,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4155911231857344, guid: 80c31e0acaf9b0446b56eefc544a995f, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114449274397976816, guid: 80c31e0acaf9b0446b56eefc544a995f,
         type: 2}
       propertyPath: armaTest
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1053007237682308, guid: 8a09698bb74585849b2373687c60be46,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80c31e0acaf9b0446b56eefc544a995f, type: 2}
   m_IsPrefabAsset: 0
@@ -690,6 +691,156 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1263563238}
   m_CullTransparentMesh: 0
+--- !u!1001 &1278541744
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[2].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[3].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -75.58483
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 88.944046
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 19.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[0].niveles.Array.data[1].ataque
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[0].lvl
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[2].arma
+      value: 
+      objectReference: {fileID: 1387491477515614, guid: 90d3cd93e02d34d429d6151e46f25b0b,
+        type: 2}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[2].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[2].lvl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[2].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[3].arma
+      value: 
+      objectReference: {fileID: 1776420767694710, guid: ddd7ceec04a4d43418db06222bdc0ce4,
+        type: 2}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[3].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[3].lvl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[3].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].arma
+      value: 
+      objectReference: {fileID: 1808402761191080, guid: a4e0be36e449b6c419cd07022cc43519,
+        type: 2}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].lvl
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[0].arma
+      value: 
+      objectReference: {fileID: 1053007237682308, guid: 8a09698bb74585849b2373687c60be46,
+        type: 2}
+    - target: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+        type: 2}
+      propertyPath: armas.Array.data[4].niveles.Array.data[9].ataque
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460618743477708, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 846431f107155ad4cac4bd95f5c44e89, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1364610701
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,51 +916,169 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1364610701}
   m_CullTransparentMesh: 0
---- !u!1 &1776781691
+--- !u!1 &1638580561
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1460618743477708, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInternal: {fileID: 1278541744}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1776781693}
-  - component: {fileID: 1776781692}
+  - component: {fileID: 1638580563}
+  - component: {fileID: 1638580562}
   m_Layer: 0
-  m_Name: carga de datos
+  m_Name: BaseDeArmas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1776781692
+--- !u!114 &1638580562
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1776781691}
+  m_CorrespondingSourceObject: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInternal: {fileID: 1278541744}
+  m_GameObject: {fileID: 1638580561}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8799abc04742a2a448570322d8e1d530, type: 3}
+  m_Script: {fileID: 11500000, guid: bf5fdb2624643394c90be34ba11c761b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombre: Test
-  dinero: 10000
-  pisoMaximo: 20
-  vida: 200
-  codigoArmaActual: AR_BASICA
-  arma: {fileID: 0}
---- !u!4 &1776781693
+  armas:
+  - arma: {fileID: 1053007237682308, guid: 8a09698bb74585849b2373687c60be46, type: 2}
+    activ: 1
+    lvl: 2
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 100
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1619967392673246, guid: 7815cd21bb32bf244be36cc283f1dd73, type: 2}
+    activ: 1
+    lvl: 1
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1387491477515614, guid: 90d3cd93e02d34d429d6151e46f25b0b, type: 2}
+    activ: 1
+    lvl: 1
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1776420767694710, guid: ddd7ceec04a4d43418db06222bdc0ce4, type: 2}
+    activ: 1
+    lvl: 1
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1808402761191080, guid: a4e0be36e449b6c419cd07022cc43519, type: 2}
+    activ: 1
+    lvl: 10
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 999
+      precio: 0
+--- !u!4 &1638580563
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1776781691}
+  m_CorrespondingSourceObject: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInternal: {fileID: 1278541744}
+  m_GameObject: {fileID: 1638580561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4635959, y: -11.2265625, z: -5.699643}
+  m_LocalPosition: {x: -75.58483, y: 88.944046, z: 19.71875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1810006607
 GameObject:

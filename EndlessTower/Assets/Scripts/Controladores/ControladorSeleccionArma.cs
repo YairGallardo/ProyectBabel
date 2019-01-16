@@ -6,6 +6,8 @@ using System.Collections.Generic;
 
 public class ControladorSeleccionArma : MonoBehaviour {
 
+    private ControladorBaseDeArmas DBarmas;
+
     [Header("variables")]
     public GameObject[] armas;
     public Transform posArmaHeroe;
@@ -27,13 +29,9 @@ public class ControladorSeleccionArma : MonoBehaviour {
     public int armaAnterior;
     public int armaSiguiente;
 
-
-    List<string[]> armasDetalle;
-
     void Start () {
-        ControladorBD cBD = new ControladorBD();
-        armasDetalle = cBD.obtenerInventario();
-        cargarPrefabs();
+        DBarmas = FindObjectOfType<ControladorBaseDeArmas>();
+        armas = DBarmas.getCompradas();
         b_anterior.SetActive(false);
         b_siguiente.SetActive(false);
         // seteo final botones y variables de control
@@ -46,37 +44,9 @@ public class ControladorSeleccionArma : MonoBehaviour {
         if (armaSiguiente > armaActual) {
             b_siguiente.SetActive(true);
         }
+        Debug.Log("cantidad armas: "+armas.Length);
         mostrarArma(0);
     }
-
-    void cargarPrefabs() {
-
-        int cantArmas = armasDetalle.Count;
-        armas = new GameObject[cantArmas];
-        int index = 0;
-        foreach (string[] elemento in armasDetalle) {
-            // [0] = Codigo
-            // [1] = Nombre 
-            // [2] = Descripcion
-            // [3] = Elemento
-            // [4] = Daño
-            // [5] = Porcentaje
-            string codigo = elemento[0];
-            GameObject arma = Resources.Load(DatosPersistentes.rutaArmasPrefs + "/" + codigo) as GameObject;
-            Arma detalles = arma.GetComponent<Arma>();
-            detalles.nombre         = elemento[1];
-            detalles.descripcion    = elemento[2];
-            detalles.elemento       = elemento[3];
-            detalles.ataque         = int.Parse(elemento[4]);
-            detalles.probEfecto     = int.Parse(elemento[5]);
-
-            armas[index] = arma;
-            index++;
-        }
-
-        
-    }
-
 
     public void siguienteArma() {
         armaAnterior = armaActual;
@@ -116,8 +86,7 @@ public class ControladorSeleccionArma : MonoBehaviour {
         t_nombreArma.text = arma.nombre;
 
         t_descArma.text = "Ataque   : " + arma.ataque + "\n" +
-                          "Elemento : " + arma.elemento + "\n" +
-                          "% efecto : " + arma.probEfecto + "%";
+                          "Elemento : " + arma.elemento + "\n";
 
 
 

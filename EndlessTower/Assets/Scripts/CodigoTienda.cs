@@ -56,7 +56,7 @@ public class CodigoTienda : MonoBehaviour
 
         panel_inf.text = "Elemento: " + primeraArma.elemento+ "\n\n"
                         + "Ataque: " + primeraArma.ataque + "\n\n"
-                        + "Descripción: " + primeraArma.descripcion;
+                       ;
 
         panel_Nuevo.SetActive(true);
     }
@@ -91,7 +91,7 @@ public class CodigoTienda : MonoBehaviour
 
         panel_inf.text = "Elemento: " + segundaArma.elemento + "\n\n"
                         + "Ataque: " + segundaArma.ataque + "\n\n"
-                        + "Descripción: " + segundaArma.descripcion;
+                       /* + "Descripción: " + segundaArma.descripcion*/;
 
         panel_Nuevo.SetActive(true);
     }
@@ -125,7 +125,7 @@ public class CodigoTienda : MonoBehaviour
 
         panel_inf.text = "Elemento: " + primeraM_Arma.elemento + "\n\n"
                         + "Ataque: " + primeraM_Arma.ataque + "\n\n"
-                        + "Descripción: " + primeraM_Arma.descripcion;
+                        /*+ "Descripción: " + primeraM_Arma.descripcion*/;
 
         panel_Nuevo.SetActive(true);
     }
@@ -181,15 +181,15 @@ public class CodigoTienda : MonoBehaviour
         //-------------------------------------------------------------------------------
         Arma primeraArma = armas1.GetComponent<Arma>();
         D1_nombre.text = primeraArma.nombre;
-        D1_precio.text = primeraArma.precio;
+       // D1_precio.text = primeraArma.precio;
         //-------------------------------------------------------------------------------
         Arma segundaArma = armas2.GetComponent<Arma>();
         D2_nombre.text = segundaArma.nombre;
-        D2_precio.text = segundaArma.precio;
+       // D2_precio.text = segundaArma.precio;
         //-------------------------------------------------------------------------------
         Arma primeraM_Arma = armas3.GetComponent<Arma>();
         D3_nombre.text = primeraM_Arma.nombre;
-        D3_precio.text = primeraM_Arma.precio;
+       // D3_precio.text = primeraM_Arma.precio;
     }
 
 

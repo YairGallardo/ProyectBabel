@@ -168,14 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f278198510e50be43bc3ecd8f6734905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codigo: 
   nombre: Excalibur
-  descripcion: 
   ataque: 1000
   elemento: 0
-  probEfecto: 5
-  precio: 
-  imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
+  imagenArma: {fileID: 21300000, guid: a91ccc10b1694a1408d17d8f6cc9b131, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1977052797631454}
   efectoAtaqueEspecial: {fileID: 1255360120449246, guid: e8f0a2baf9dd45d41a6db587e92aa096,

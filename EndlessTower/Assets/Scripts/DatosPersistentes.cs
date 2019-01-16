@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DatosPersistentes : MonoBehaviour {
-    /*  El objeto que posea este script no se destruye al pasar de una escena a otra.
-     *  sirve para guardar datos que queramos modificar en una escen pero utilizar en otra
-     */
+
     
-    public static DatosPersistentes datosPers;  //variable que nos permite saber si ya hay un objeto de este tipo creado
+    public static DatosPersistentes datosPers; 
     public static GameObject arma;
     public GameObject armaTest;
 
@@ -16,7 +14,6 @@ public class DatosPersistentes : MonoBehaviour {
     public static int pisoMaximo;
     public static bool cargada = false;
 
-    public static string rutaArmasPrefs = "Prefab/Armas";
 
     void Awake(){
         if (!cargada) {
@@ -27,7 +24,6 @@ public class DatosPersistentes : MonoBehaviour {
 
         if (datosPers == null){
             datosPers = this;
-            // esta funcion le dice al objeto que posea este script que no se destruya al cargar una nueva escena
             DontDestroyOnLoad(gameObject);
         } else {
             Destroy(gameObject);

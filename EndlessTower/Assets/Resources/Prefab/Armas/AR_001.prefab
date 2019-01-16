@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1619967392673246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.633, y: -3.0836256, z: -6.906}
+  m_LocalPosition: {x: 6.43, y: -3.0836256, z: -6.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4009279131242376}
@@ -168,14 +168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f278198510e50be43bc3ecd8f6734905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codigo: 
   nombre: Filo Helado
-  descripcion: 
   ataque: 30
   elemento: 0
-  probEfecto: 5
-  precio: 
-  imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
+  imagenArma: {fileID: 21300000, guid: b86a36a945391c34a9a882fb9aecd748, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1415332983240096}
   efectoAtaqueEspecial: {fileID: 1255360120449246, guid: e8f0a2baf9dd45d41a6db587e92aa096,
