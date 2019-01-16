@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System.Collections.Generic;
 using System;
 
 public class CodigoTienda : MonoBehaviour
@@ -17,14 +18,18 @@ public class CodigoTienda : MonoBehaviour
     public GameObject panel_Nuevo;
     public Text panel_nombre;
     public Text panel_inf;
+
     [Header("Producto#1:")]
     public GameObject armas1;
     public Text D1_nombre;
     public Text D1_precio;
+    public Text D1_descripcion;
     public GameObject b_Comprar_1;
     public GameObject b_Comprado_1;
     public GameObject imgCompra_1;
-    //public Text Dinero2_1;
+    public Image imagenArma2;
+    String dineroMuestra = "0";
+
     //public GameObject b_Informacion_1;
     [Header("-----------------------------------------------------")]
     [Header("Producto#2:")]
@@ -51,20 +56,13 @@ public class CodigoTienda : MonoBehaviour
     public void presionarInformacion_1()
     {
         Arma primeraArma = armas1.GetComponent<Arma>();
-
-        panel_nombre.text = primeraArma.nombre;
-
-        panel_inf.text = "Elemento: " + primeraArma.elemento+ "\n\n"
-                        + "Ataque: " + primeraArma.ataque + "\n\n"
-                        + "Descripción: " + primeraArma.descripcion;
-
-        panel_Nuevo.SetActive(true);
+        armas1.SetActive(true);
     }
 
     public void presionarBoton_1()
     {
         int a = (int.Parse(Dinero.text));
-        int b = (int.Parse(D1_precio.text));
+        int b = (int.Parse(dineroMuestra));
         if (a > b || a == b)
         {
             imgCompra_1.SetActive(true);
@@ -178,18 +176,24 @@ public class CodigoTienda : MonoBehaviour
 
     void Start()
     {
+
         //-------------------------------------------------------------------------------
         Arma primeraArma = armas1.GetComponent<Arma>();
         D1_nombre.text = primeraArma.nombre;
-        D1_precio.text = primeraArma.precio;
+        D1_descripcion.text = "Atk: " + primeraArma.ataque + "\n"
+                             + "Elem: " + primeraArma.elemento;
+       D1_precio.text = "$" + primeraArma.precio;
+           dineroMuestra = primeraArma.precio;
+        imagenArma2.sprite =primeraArma.imagenArma;
+
         //-------------------------------------------------------------------------------
-        Arma segundaArma = armas2.GetComponent<Arma>();
-        D2_nombre.text = segundaArma.nombre;
-        D2_precio.text = segundaArma.precio;
+        //Arma segundaArma = armas2.GetComponent<Arma>();
+        //D2_nombre.text = segundaArma.nombre;
+        //D2_precio.text = segundaArma.precio;
         //-------------------------------------------------------------------------------
-        Arma primeraM_Arma = armas3.GetComponent<Arma>();
-        D3_nombre.text = primeraM_Arma.nombre;
-        D3_precio.text = primeraM_Arma.precio;
+        //Arma primeraM_Arma = armas3.GetComponent<Arma>();
+        //D3_nombre.text = primeraM_Arma.nombre;
+        //.text = primeraM_Arma.precio;
     }
 
 
