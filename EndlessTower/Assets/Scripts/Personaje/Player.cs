@@ -129,16 +129,20 @@ public class Player : MonoBehaviour {
 
     IEnumerator stopBAtack()
     {
-        yield return new WaitForSeconds(.3f);
+        move.enabled = false;
+        yield return new WaitForSeconds(.5f);
         anim.SetBool("bAtack", false);
         myArma.ataqueFin();
+        move.enabled = true;
 
     }
 
     IEnumerator stopSAtack()
     {
-        yield return new WaitForSeconds(.3f);
+        move.enabled = false;
+        yield return new WaitForSeconds(.5f);
         anim.SetBool("sAtack", false);
+        move.enabled = true;
 
     }
 

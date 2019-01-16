@@ -152,8 +152,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1776420767694710}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.31183076, y: 0.21173358, z: 2.363824}
   m_Center: {x: -0.01876843, y: 0.006255746, z: 1.4952025}
@@ -169,11 +169,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codigo: 
-  nombre: Espada Larga
-  descripcion: Desc
-  ataque: 10
-  elemento: 0
-  probEfecto: 5
+  nombre: test000
+  descripcion: desc 000
+  ataque: 500
+  elemento: Hielo
+  probEfecto: 9
+  precio: 
   imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1151040291444242}

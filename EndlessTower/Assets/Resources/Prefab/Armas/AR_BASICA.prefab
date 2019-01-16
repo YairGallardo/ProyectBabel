@@ -123,8 +123,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1053007237682308}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.16810238, y: 0.04814986, z: 0.7474477}
   m_Center: {x: -0.004206121, y: 0, z: 0.50718915}
@@ -140,11 +140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   codigo: 
-  nombre: 
-  descripcion: 
+  nombre: Espada de Entrenamiento
+  descripcion: Espada comun, no posee mucho filo pero ayuda en batalla
   ataque: 10
   elemento: Neutral
   probEfecto: 0
+  precio: 
   imagenArma: {fileID: 0}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1747392246358374}

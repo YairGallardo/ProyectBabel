@@ -182,8 +182,8 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1387491477515614}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.60514903, y: 0.1895163, z: 1.7377481}
   m_Center: {x: -0.031172395, y: 0.010390878, z: 1.1377945}
@@ -222,6 +222,7 @@ MonoBehaviour:
   ataque: 50
   elemento: 0
   probEfecto: 5
+  precio: 
   imagenArma: {fileID: 21300000, guid: 641976a9990bde3499a24851febc83ab, type: 3}
   imagenhabilidad: {fileID: 0}
   efectoBasico: {fileID: 1479580209752852}
