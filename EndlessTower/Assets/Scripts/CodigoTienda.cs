@@ -11,14 +11,9 @@ public class CodigoTienda : MonoBehaviour
     public GameObject Cambiar2;
     public GameObject Boton1;
     public GameObject Boton2;
-
     public GameObject b_Alerta;
     public GameObject b_Aceptar;
     public Text Dinero;
-    public GameObject panel_Nuevo;
-    public Text panel_nombre;
-    public Text panel_inf;
-
     [Header("Producto#1:")]
     public GameObject armas1;
     public Text D1_nombre;
@@ -26,46 +21,61 @@ public class CodigoTienda : MonoBehaviour
     public Text D1_descripcion;
     public GameObject b_Comprar_1;
     public GameObject b_Comprado_1;
-    public GameObject imgCompra_1;
-    public Image imagenArma2;
-    String dineroMuestra = "0";
-
-    //public GameObject b_Informacion_1;
+    public Image imagenArma1;
+    String dineroMuestra1 = "0";
     [Header("-----------------------------------------------------")]
     [Header("Producto#2:")]
     public GameObject armas2;
     public Text D2_nombre;
     public Text D2_precio;
+    public Text D2_descripcion;
     public GameObject b_Comprar_2;
     public GameObject b_Comprado_2;
-    public GameObject imgCompra_2;
-    //public Text Dinero2_2;
-    //public GameObject b_Informacion_2;
+    public Image imagenArma2;
+    String dineroMuestra2 = "0";
     [Header("-----------------------------------------------------")]
-    [Header("Producto#2:")]
+    [Header("Producto#3:")]
     public GameObject armas3;
     public Text D3_nombre;
     public Text D3_precio;
+    public Text D3_descripcion;
     public GameObject b_Comprar_3;
     public GameObject b_Comprado_3;
-    public GameObject imgCompra_3;
-
+    public Image imagenArma3;
+    String dineroMuestra3 = "0";
+    [Header("-----------------------------------------------------")]
+    [Header("Producto#4:")]
+    public GameObject armas4;
+    public Text D4_nombre;
+    public Text D4_precio;
+    public Text D4_descripcion;
+    public GameObject b_Comprar_4;
+    public GameObject b_Comprado_4;
+    public Image imagenArma4;
+    String dineroMuestra4 = "0";
+    [Header("-----------------------------------------------------")]
+    [Header("Producto#5:")]
+    public GameObject armas5;
+    public Text D5_nombre;
+    public Text D5_precio;
+    public Text D5_descripcion;
+    public GameObject b_Comprar_5;
+    public GameObject b_Comprado_5;
+    public Image imagenArma5;
+    String dineroMuestra5 = "0";
 
     //############################//Producto_1
-
     public void presionarInformacion_1()
     {
         Arma primeraArma = armas1.GetComponent<Arma>();
         armas1.SetActive(true);
     }
-
     public void presionarBoton_1()
     {
         int a = (int.Parse(Dinero.text));
-        int b = (int.Parse(dineroMuestra));
+        int b = (int.Parse(dineroMuestra1));
         if (a > b || a == b)
         {
-            imgCompra_1.SetActive(true);
             b_Comprar_1.SetActive(false);
             b_Comprado_1.SetActive(true);
             a = a - b;
@@ -75,87 +85,84 @@ public class CodigoTienda : MonoBehaviour
         if (a < b)
         {
             b_Alerta.SetActive(true);
- 
         }
     }
-
     //############################//Producto_2
-
-    public void presionarInformacion_2()
-    {
-        Arma segundaArma = armas2.GetComponent<Arma>();
-
-        panel_nombre.text = segundaArma.nombre;
-
-        panel_inf.text = "Elemento: " + segundaArma.elemento + "\n\n"
-                        + "Ataque: " + segundaArma.ataque + "\n\n"
-                        + "Descripción: " + segundaArma.descripcion;
-
-        panel_Nuevo.SetActive(true);
-    }
-
     public void presionarBoton_2()
     {
-        int a2 = (int.Parse(Dinero.text));
-        int b2 = (int.Parse(D2_precio.text));
-        if (a2 > b2 || a2 == b2)
+        int a = (int.Parse(Dinero.text));
+        int b = (int.Parse(dineroMuestra2));
+        if (a > b || a == b)
         {
-            imgCompra_2.SetActive(true);
             b_Comprar_2.SetActive(false);
             b_Comprado_2.SetActive(true);
-            a2 = a2 - b2;
-            Dinero.text = a2.ToString();
+            a = a - b;
+            Dinero.text = a.ToString();
         }
         else
-        if (a2 < b2)
+        if (a < b)
         {
             b_Alerta.SetActive(true);
         }
-    }
-
-    //############################//ProductoMejora_1
-
-    public void presionarInformacionMejora_1()
-    {
-        Arma primeraM_Arma = armas3.GetComponent<Arma>();
-
-        panel_nombre.text = primeraM_Arma.nombre;
-
-        panel_inf.text = "Elemento: " + primeraM_Arma.elemento + "\n\n"
-                        + "Ataque: " + primeraM_Arma.ataque + "\n\n"
-                        + "Descripción: " + primeraM_Arma.descripcion;
-
-        panel_Nuevo.SetActive(true);
-    }
-
+    }    
+    //############################//Producto_3
     public void presionarBoton_3()
     {
-        int a3 = (int.Parse(Dinero.text));
-        int b3 = (int.Parse(D2_precio.text));
-        if (a3 > b3 || a3 == b3)
+        int a = (int.Parse(Dinero.text));
+        int b = (int.Parse(dineroMuestra3));
+        if (a > b || a == b)
         {
-            imgCompra_3.SetActive(true);
             b_Comprar_3.SetActive(false);
             b_Comprado_3.SetActive(true);
-            a3 = a3 - b3;
-            Dinero.text = a3.ToString();
+            a = a - b;
+            Dinero.text = a.ToString();
         }
         else
-        if (a3 < b3)
+        if (a < b)
         {
             b_Alerta.SetActive(true);
         }
     }
-
+    //############################//Producto_4
+    public void presionarBoton_4()
+    {
+        int a = (int.Parse(Dinero.text));
+        int b = (int.Parse(dineroMuestra4));
+        if (a > b || a == b)
+        {
+            b_Comprar_4.SetActive(false);
+            b_Comprado_4.SetActive(true);
+            a = a - b;
+            Dinero.text = a.ToString();
+        }
+        else
+        if (a < b)
+        {
+            b_Alerta.SetActive(true);
+        }
+    }
+    //############################//Producto_3
+    public void presionarBoton_5()
+    {
+        int a = (int.Parse(Dinero.text));
+        int b = (int.Parse(dineroMuestra5));
+        if (a > b || a == b)
+        {
+            b_Comprar_5.SetActive(false);
+            b_Comprado_5.SetActive(true);
+            a = a - b;
+            Dinero.text = a.ToString();
+        }
+        else
+        if (a < b)
+        {
+            b_Alerta.SetActive(true);
+        }
+    }
     //############################//
     public void presionarAceptar()
     {
         b_Alerta.SetActive(false);
-    }
-
-    public void presionarAceptarEnInformacion()
-    {
-        panel_Nuevo.SetActive(false);
     }
 
     public void cambiarMejora()
@@ -182,18 +189,41 @@ public class CodigoTienda : MonoBehaviour
         D1_nombre.text = primeraArma.nombre;
         D1_descripcion.text = "Atk: " + primeraArma.ataque + "\n"
                              + "Elem: " + primeraArma.elemento;
-       D1_precio.text = "$" + primeraArma.precio;
-           dineroMuestra = primeraArma.precio;
-        imagenArma2.sprite =primeraArma.imagenArma;
-
+        D1_precio.text = "$" + primeraArma.precio;
+        dineroMuestra1 = primeraArma.precio;
+        imagenArma1.sprite =primeraArma.imagenArma;
         //-------------------------------------------------------------------------------
-        //Arma segundaArma = armas2.GetComponent<Arma>();
-        //D2_nombre.text = segundaArma.nombre;
-        //D2_precio.text = segundaArma.precio;
+        Arma segundoArma = armas2.GetComponent<Arma>();
+        D2_nombre.text = segundoArma.nombre;
+        D2_descripcion.text = "Atk: " + segundoArma.ataque + "\n"
+                             + "Elem: " + segundoArma.elemento;
+        D2_precio.text = "$" + segundoArma.precio;
+        dineroMuestra2 = segundoArma.precio;
+        imagenArma2.sprite = segundoArma.imagenArma;
         //-------------------------------------------------------------------------------
-        //Arma primeraM_Arma = armas3.GetComponent<Arma>();
-        //D3_nombre.text = primeraM_Arma.nombre;
-        //.text = primeraM_Arma.precio;
+        Arma terceroArma = armas3.GetComponent<Arma>();
+        D3_nombre.text = terceroArma.nombre;
+        D3_descripcion.text = "Atk: " + terceroArma.ataque + "\n"
+                             + "Elem: " + terceroArma.elemento;
+        D3_precio.text = "$" + terceroArma.precio;
+        dineroMuestra3 = terceroArma.precio;
+        imagenArma3.sprite = terceroArma.imagenArma;
+        //-------------------------------------------------------------------------------
+        Arma cuartoArma = armas4.GetComponent<Arma>();
+        D4_nombre.text = cuartoArma.nombre;
+        D4_descripcion.text = "Atk: " + cuartoArma.ataque + "\n"
+                             + "Elem: " + cuartoArma.elemento;
+        D4_precio.text = "$" + cuartoArma.precio;
+        dineroMuestra4 = cuartoArma.precio;
+        imagenArma4.sprite = cuartoArma.imagenArma;
+        //-------------------------------------------------------------------------------
+        Arma quintoArma = armas5.GetComponent<Arma>();
+        D5_nombre.text = quintoArma.nombre;
+        D5_descripcion.text = "Atk: " + quintoArma.ataque + "\n"
+                             + "Elem: " + quintoArma.elemento;
+        D5_precio.text = "$" + quintoArma.precio;
+        dineroMuestra5 = quintoArma.precio;
+        imagenArma5.sprite = quintoArma.imagenArma;
     }
 
 
