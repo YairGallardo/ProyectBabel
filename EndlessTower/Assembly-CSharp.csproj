@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Arma.cs" />
     <Compile Include="Assets\Scripts\Armas\EfectoArmaBasico.cs" />
     <Compile Include="Assets\Scripts\CodigoTienda.cs" />
+    <Compile Include="Assets\Scripts\CodigoTiendaMejora.cs" />
     <Compile Include="Assets\Scripts\ControladorBD.cs" />
     <Compile Include="Assets\Scripts\ControladorCargaDeDatos.cs" />
     <Compile Include="Assets\Scripts\Controladores\ControladorCamara.cs" />

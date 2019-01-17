@@ -141,7 +141,7 @@ public class CodigoTienda : MonoBehaviour
             b_Alerta.SetActive(true);
         }
     }
-    //############################//Producto_3
+    //############################//Producto_5
     public void presionarBoton_5()
     {
         int a = (int.Parse(Dinero.text));
