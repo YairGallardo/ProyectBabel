@@ -67,96 +67,216 @@ public class CodigoTienda : MonoBehaviour
     //############################//Producto_1
     public void presionarInformacion_1()
     {
-        Arma primeraArma = armas1.GetComponent<Arma>();
         armas1.SetActive(true);
+
+        armas2.SetActive(false);
+        armas3.SetActive(false);
+        armas4.SetActive(false);
+        armas5.SetActive(false);
     }
     public void presionarBoton_1()
     {
         int a = (int.Parse(Dinero.text));
         int b = (int.Parse(dineroMuestra1));
-        if (a > b || a == b)
+
+        for (int i = 0; i < 1; i++)
         {
-            b_Comprar_1.SetActive(false);
-            b_Comprado_1.SetActive(true);
-            a = a - b;
-            Dinero.text = a.ToString();
+            if (b != 0)
+            {
+                if (a > b)
+                {
+                    b_Comprar_1.SetActive(false);
+                    b_Comprado_1.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a == b)
+                {
+                    b_Comprar_1.SetActive(false);
+                    b_Comprado_1.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else 
+                if (a < b)
+                {
+                    Debug.Log("Entro " + a + "<" + b);
+                    b_Alerta.SetActive(true);
+                }
+            }
+           // b_Alerta.SetActive(true);
         }
-        else
-        if (a < b)
-        {
-            b_Alerta.SetActive(true);
-        }
+
     }
     //############################//Producto_2
+    public void presionarInformacion_2()
+    {
+        armas2.SetActive(true);
+
+        armas1.SetActive(false);
+        armas3.SetActive(false);
+        armas4.SetActive(false);
+        armas5.SetActive(false);
+    }
     public void presionarBoton_2()
     {
         int a = (int.Parse(Dinero.text));
         int b = (int.Parse(dineroMuestra2));
-        if (a > b || a == b)
+
+        for (int i = 0; i < 1; i++)
         {
-            b_Comprar_2.SetActive(false);
-            b_Comprado_2.SetActive(true);
-            a = a - b;
-            Dinero.text = a.ToString();
+            if (b != 0)
+            {
+                if (a > b)
+                {
+                    b_Comprar_2.SetActive(false);
+                    b_Comprado_2.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a == b)
+                {
+                    b_Comprar_2.SetActive(false);
+                    b_Comprado_2.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a < b)
+                {
+                    Debug.Log("Entro " + a + "<" + b);
+                    b_Alerta.SetActive(true);
+                }
+            }
         }
-        else
-        if (a < b)
-        {
-            b_Alerta.SetActive(true);
-        }
-    }    
+    }
     //############################//Producto_3
+    public void presionarInformacion_3()
+    {
+        armas3.SetActive(true);
+
+        armas1.SetActive(false);
+        armas2.SetActive(false);
+        armas4.SetActive(false);
+        armas5.SetActive(false);
+    }
     public void presionarBoton_3()
     {
         int a = (int.Parse(Dinero.text));
         int b = (int.Parse(dineroMuestra3));
-        if (a > b || a == b)
+        for (int i = 0; i < 1; i++)
         {
-            b_Comprar_3.SetActive(false);
-            b_Comprado_3.SetActive(true);
-            a = a - b;
-            Dinero.text = a.ToString();
-        }
-        else
-        if (a < b)
-        {
-            b_Alerta.SetActive(true);
+            if (b != 0)
+            {
+                if (a > b)
+                {
+                    b_Comprar_3.SetActive(false);
+                    b_Comprado_3.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a == b)
+                {
+                    b_Comprar_3.SetActive(false);
+                    b_Comprado_3.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a < b)
+                {
+                    Debug.Log("Entro " + a + "<" + b);
+                    b_Alerta.SetActive(true);
+                }
+            }
         }
     }
     //############################//Producto_4
+    public void presionarInformacion_4()
+    {
+        armas4.SetActive(true);
+
+        armas1.SetActive(false);
+        armas2.SetActive(false);
+        armas3.SetActive(false);
+        armas5.SetActive(false);
+    }
     public void presionarBoton_4()
     {
         int a = (int.Parse(Dinero.text));
         int b = (int.Parse(dineroMuestra4));
-        if (a > b || a == b)
+
+        for (int i = 0; i < 1; i++)
         {
-            b_Comprar_4.SetActive(false);
-            b_Comprado_4.SetActive(true);
-            a = a - b;
-            Dinero.text = a.ToString();
-        }
-        else
-        if (a < b)
-        {
-            b_Alerta.SetActive(true);
+            if (b != 0)
+            {
+                if (a > b)
+                {
+                    b_Comprar_4.SetActive(false);
+                    b_Comprado_4.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a == b)
+                {
+                    b_Comprar_4.SetActive(false);
+                    b_Comprado_4.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a < b)
+                {
+                    Debug.Log("Entro " + a + "<" + b);
+                    b_Alerta.SetActive(true);
+                }
+            }
         }
     }
     //############################//Producto_5
+    public void presionarInformacion_5()
+    {
+        armas5.SetActive(true);
+
+        armas1.SetActive(false);
+        armas2.SetActive(false);
+        armas3.SetActive(false);
+        armas4.SetActive(false);
+    }
     public void presionarBoton_5()
     {
         int a = (int.Parse(Dinero.text));
         int b = (int.Parse(dineroMuestra5));
-        if (a > b || a == b)
+        for (int i = 0; i < 1; i++)
         {
-            b_Comprar_5.SetActive(false);
-            b_Comprado_5.SetActive(true);
-            a = a - b;
-            Dinero.text = a.ToString();
-        }
-        else
-        if (a < b)
-        {
-            b_Alerta.SetActive(true);
+            if (b != 0)
+            {
+                if (a > b)
+                {
+                    b_Comprar_5.SetActive(false);
+                    b_Comprado_5.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a == b)
+                {
+                    b_Comprar_5.SetActive(false);
+                    b_Comprado_5.SetActive(true);
+                    a = a - b;
+                    Dinero.text = a.ToString();
+                }
+                else
+                if (a < b)
+                {
+                    Debug.Log("Entro " + a + "<" + b);
+                    b_Alerta.SetActive(true);
+                }
+            }
         }
     }
     //############################//

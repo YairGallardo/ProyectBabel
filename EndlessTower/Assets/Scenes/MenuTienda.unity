@@ -2673,6 +2673,12 @@ Prefab:
       propertyPath: precio
       value: 250
       objectReference: {fileID: 0}
+    - target: {fileID: 114821756557173472, guid: 90d3cd93e02d34d429d6151e46f25b0b,
+        type: 2}
+      propertyPath: imagenArma
+      value: 
+      objectReference: {fileID: 21300000, guid: a23a53b90b9dba7419a97c59775c25c8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90d3cd93e02d34d429d6151e46f25b0b, type: 2}
   m_IsPrefabAsset: 0
@@ -5471,7 +5477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 264.3226, y: -0.043151855}
+  m_AnchoredPosition: {x: 264.32266, y: 0.0000034422}
   m_SizeDelta: {x: 2049.9, y: 544.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &782739420
@@ -8529,7 +8535,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 38999768}
-        m_MethodName: presionarInformacion_1
+        m_MethodName: presionarInformacion_3
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9700,7 +9706,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 38999768}
-        m_MethodName: presionarInformacion_1
+        m_MethodName: presionarInformacion_4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10667,7 +10673,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 261.2, y: -0.0073371}
+  m_AnchoredPosition: {x: 267, y: -0.0000035316}
   m_SizeDelta: {x: 2081.6, y: 544.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1677330868
@@ -10994,7 +11000,7 @@ Prefab:
     - target: {fileID: 114731797318090494, guid: 8a09698bb74585849b2373687c60be46,
         type: 2}
       propertyPath: precio
-      value: 100
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a09698bb74585849b2373687c60be46, type: 2}
@@ -12724,7 +12730,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 38999768}
-        m_MethodName: presionarInformacion_1
+        m_MethodName: presionarInformacion_5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12917,7 +12923,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 38999768}
-        m_MethodName: presionarInformacion_1
+        m_MethodName: presionarInformacion_2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13562,7 +13568,7 @@ MonoBehaviour:
   D4_precio: {fileID: 1628336935}
   D4_descripcion: {fileID: 780922437}
   b_Comprar_4: {fileID: 1713420951}
-  b_Comprado_4: {fileID: 1129612918}
+  b_Comprado_4: {fileID: 458662824}
   imagenArma4: {fileID: 625598958}
   armas5: {fileID: 1710066101}
   D5_nombre: {fileID: 1189719586}
