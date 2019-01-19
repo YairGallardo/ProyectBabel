@@ -1,16 +1,13 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class CodigoTienda : MonoBehaviour
+public class CodigoTiendaMejora : MonoBehaviour
 {
-    public GameObject Cambiar1;
-    public GameObject Cambiar2;
-    public GameObject Boton1;
-    public GameObject Boton2;
     public GameObject b_Alerta;
     public GameObject b_Aceptar;
     public Text Dinero;
@@ -64,6 +61,7 @@ public class CodigoTienda : MonoBehaviour
     public Image imagenArma5;
     String dineroMuestra5 = "0";
 
+
     //############################//Producto_1
     public void presionarInformacion_1()
     {
@@ -101,11 +99,9 @@ public class CodigoTienda : MonoBehaviour
                 else
                 if (a < b)
                 {
-                    Debug.Log("Entro " + a + "<" + b);
                     b_Alerta.SetActive(true);
                 }
             }
-           // b_Alerta.SetActive(true);
         }
 
     }
@@ -146,7 +142,6 @@ public class CodigoTienda : MonoBehaviour
                 else
                 if (a < b)
                 {
-                    Debug.Log("Entro " + a + "<" + b);
                     b_Alerta.SetActive(true);
                 }
             }
@@ -188,7 +183,6 @@ public class CodigoTienda : MonoBehaviour
                 else
                 if (a < b)
                 {
-                    Debug.Log("Entro " + a + "<" + b);
                     b_Alerta.SetActive(true);
                 }
             }
@@ -231,7 +225,6 @@ public class CodigoTienda : MonoBehaviour
                 else
                 if (a < b)
                 {
-                    Debug.Log("Entro " + a + "<" + b);
                     b_Alerta.SetActive(true);
                 }
             }
@@ -273,7 +266,6 @@ public class CodigoTienda : MonoBehaviour
                 else
                 if (a < b)
                 {
-                    Debug.Log("Entro " + a + "<" + b);
                     b_Alerta.SetActive(true);
                 }
             }
@@ -285,67 +277,77 @@ public class CodigoTienda : MonoBehaviour
         b_Alerta.SetActive(false);
     }
 
-    public void cambiarMejora()
-    {
-        Boton1.SetActive(false);
-        Boton2.SetActive(true);
-        Cambiar1.SetActive(false);
-        Cambiar2.SetActive(true);
-    }
-
-    public void cambiarNuevo()
-    {
-        Boton2.SetActive(false);
-        Boton1.SetActive(true);
-        Cambiar2.SetActive(false);
-        Cambiar1.SetActive(true);
-    }
-
     void Start()
     {
 
         //-------------------------------------------------------------------------------
         Arma primeraArma = armas1.GetComponent<Arma>();
         D1_nombre.text = primeraArma.nombre;
-        D1_descripcion.text = "Atk: " + primeraArma.ataque + "\n"
-                             + "Elem: " + primeraArma.elemento;
-        D1_precio.text = "$" + primeraArma.precio;
-        dineroMuestra1 = primeraArma.precio;
-        imagenArma1.sprite =primeraArma.imagenArma;
+
+        //**************************************************Aumento del ataque del arma, se guarda en la variable: Atk1
+
+        D1_descripcion.text = "Atk: " + primeraArma.ataque + "+(100)\n" + "Elem: " + primeraArma.elemento;
+
+        int precioNuevo1 = int.Parse(primeraArma.precio) + 100;
+
+        D1_precio.text = "$" + precioNuevo1;
+
+        int Atk1 = precioNuevo1;
+
+        dineroMuestra1 = Atk1 + "";
+        imagenArma1.sprite = primeraArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma segundoArma = armas2.GetComponent<Arma>();
         D2_nombre.text = segundoArma.nombre;
-        D2_descripcion.text = "Atk: " + segundoArma.ataque + "\n"
-                             + "Elem: " + segundoArma.elemento;
-        D2_precio.text = "$" + segundoArma.precio;
-        dineroMuestra2 = segundoArma.precio;
+        D2_descripcion.text = "Atk: " + segundoArma.ataque + "+(100)\n" + "Elem: " + segundoArma.elemento;
+
+        int precioNuevo2 = int.Parse(segundoArma.precio) + 100;
+
+        D2_precio.text = "$" + precioNuevo2;
+
+        int Atk2 = precioNuevo2;
+
+        dineroMuestra2 = Atk2 + "";
         imagenArma2.sprite = segundoArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma terceroArma = armas3.GetComponent<Arma>();
         D3_nombre.text = terceroArma.nombre;
-        D3_descripcion.text = "Atk: " + terceroArma.ataque + "\n"
-                             + "Elem: " + terceroArma.elemento;
-        D3_precio.text = "$" + terceroArma.precio;
-        dineroMuestra3 = terceroArma.precio;
+        D3_descripcion.text = "Atk: " + terceroArma.ataque + "+(100)\n" + "Elem: " + terceroArma.elemento;
+
+        int precioNuevo3 = int.Parse(terceroArma.precio) + 100;
+
+        D3_precio.text = "$" + precioNuevo3;
+
+        int Atk3 = precioNuevo3;
+
+        dineroMuestra3 = Atk3 + "";
         imagenArma3.sprite = terceroArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma cuartoArma = armas4.GetComponent<Arma>();
         D4_nombre.text = cuartoArma.nombre;
-        D4_descripcion.text = "Atk: " + cuartoArma.ataque + "\n"
-                             + "Elem: " + cuartoArma.elemento;
-        D4_precio.text = "$" + cuartoArma.precio;
-        dineroMuestra4 = cuartoArma.precio;
+        D4_descripcion.text = "Atk: " + cuartoArma.ataque + "+(100)\n" + "Elem: " + cuartoArma.elemento;
+
+        int precioNuevo4 = int.Parse(cuartoArma.precio) + 100;
+
+        D4_precio.text = "$" + precioNuevo4;
+
+        int Atk4 = precioNuevo4;
+
+        dineroMuestra4 = Atk4 + "";
         imagenArma4.sprite = cuartoArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma quintoArma = armas5.GetComponent<Arma>();
         D5_nombre.text = quintoArma.nombre;
-        D5_descripcion.text = "Atk: " + quintoArma.ataque + "\n"
-                             + "Elem: " + quintoArma.elemento;
-        D5_precio.text = "$" + quintoArma.precio;
-        dineroMuestra5 = quintoArma.precio;
+        D5_descripcion.text = "Atk: " + quintoArma.ataque + "+(100)\n" + "Elem: " + quintoArma.elemento;
+
+        int precioNuevo5 = int.Parse(quintoArma.precio) + 100;
+
+        D5_precio.text = "$" + precioNuevo5;
+
+        int Atk5 = precioNuevo5;
+
+        dineroMuestra5 = Atk5 + "";
         imagenArma5.sprite = quintoArma.imagenArma;
     }
-
-
-
 }
+
