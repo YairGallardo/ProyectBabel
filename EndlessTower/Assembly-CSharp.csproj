@@ -86,12 +86,6 @@
     <Compile Include="Assets\Scripts\Enemigos\Enemigo.cs" />
     <Compile Include="Assets\Scripts\GuardadoyCarga\PlayerData.cs" />
     <Compile Include="Assets\Scripts\GuardadoyCarga\SaveSystem.cs" />
-    <Compile Include="Assets\Scripts\Inventario\confirmarCompra.cs" />
-    <Compile Include="Assets\Scripts\Inventario\DataBase.cs" />
-    <Compile Include="Assets\Scripts\Inventario\Inventario.cs" />
-    <Compile Include="Assets\Scripts\Inventario\InventarioNuevo.cs" />
-    <Compile Include="Assets\Scripts\Inventario\ItemTienda.cs" />
-    <Compile Include="Assets\Scripts\Inventario\ShopManager.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Scripts\Menus\AccionMenuDos.cs" />
     <Compile Include="Assets\Scripts\Menus\AccionMenuPrincipal.cs" />
