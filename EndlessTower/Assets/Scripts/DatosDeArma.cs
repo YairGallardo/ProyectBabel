@@ -4,6 +4,7 @@ public class DatosDeArma  {
     public GameObject arma;
     public bool activ;
     public int lvl;
+    public int index;
     public Especificaciones[] niveles;
 }
 

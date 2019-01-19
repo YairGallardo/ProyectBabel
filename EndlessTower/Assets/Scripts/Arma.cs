@@ -8,7 +8,7 @@ public class Arma : MonoBehaviour {
     public string nombre;                           // Nombre del arma dentro del juego
     public int ataque;                              // Puntos de ataque del arma
     public string elemento = "Normal";   // Elemento del Arma
-    public int index;
+
 
     [Header("ElementosVisuales")]
     public Sprite imagenArma;                       // Imagen que se muestra en la ventana de seleccion de arma

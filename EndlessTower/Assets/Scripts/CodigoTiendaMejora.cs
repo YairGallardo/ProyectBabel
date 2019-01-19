@@ -279,6 +279,7 @@ public class CodigoTiendaMejora : MonoBehaviour
 
     void Start()
     {
+        string precio = "999";
 
         //-------------------------------------------------------------------------------
         Arma primeraArma = armas1.GetComponent<Arma>();
@@ -288,7 +289,7 @@ public class CodigoTiendaMejora : MonoBehaviour
 
         D1_descripcion.text = "Atk: " + primeraArma.ataque + "+(100)\n" + "Elem: " + primeraArma.elemento;
 
-        int precioNuevo1 = int.Parse(primeraArma.precio) + 100;
+        int precioNuevo1 = int.Parse(precio) + 100;
 
         D1_precio.text = "$" + precioNuevo1;
 
@@ -301,7 +302,7 @@ public class CodigoTiendaMejora : MonoBehaviour
         D2_nombre.text = segundoArma.nombre;
         D2_descripcion.text = "Atk: " + segundoArma.ataque + "+(100)\n" + "Elem: " + segundoArma.elemento;
 
-        int precioNuevo2 = int.Parse(segundoArma.precio) + 100;
+        int precioNuevo2 = int.Parse(precio) + 100;
 
         D2_precio.text = "$" + precioNuevo2;
 
@@ -314,7 +315,7 @@ public class CodigoTiendaMejora : MonoBehaviour
         D3_nombre.text = terceroArma.nombre;
         D3_descripcion.text = "Atk: " + terceroArma.ataque + "+(100)\n" + "Elem: " + terceroArma.elemento;
 
-        int precioNuevo3 = int.Parse(terceroArma.precio) + 100;
+        int precioNuevo3 = int.Parse(precio) + 100;
 
         D3_precio.text = "$" + precioNuevo3;
 
@@ -327,7 +328,7 @@ public class CodigoTiendaMejora : MonoBehaviour
         D4_nombre.text = cuartoArma.nombre;
         D4_descripcion.text = "Atk: " + cuartoArma.ataque + "+(100)\n" + "Elem: " + cuartoArma.elemento;
 
-        int precioNuevo4 = int.Parse(cuartoArma.precio) + 100;
+        int precioNuevo4 = int.Parse(precio) + 100;
 
         D4_precio.text = "$" + precioNuevo4;
 
@@ -340,7 +341,7 @@ public class CodigoTiendaMejora : MonoBehaviour
         D5_nombre.text = quintoArma.nombre;
         D5_descripcion.text = "Atk: " + quintoArma.ataque + "+(100)\n" + "Elem: " + quintoArma.elemento;
 
-        int precioNuevo5 = int.Parse(quintoArma.precio) + 100;
+        int precioNuevo5 = int.Parse(precio) + 100;
 
         D5_precio.text = "$" + precioNuevo5;
 

@@ -14,6 +14,23 @@ public class CodigoTienda : MonoBehaviour
     public GameObject b_Alerta;
     public GameObject b_Aceptar;
     public Text Dinero;
+
+    public struct elementoTienda {
+        public GameObject modeloArma;
+        public Text D1_nombre;
+        public Text D1_precio;
+        public Text D1_descripcion;
+        public GameObject b_Comprar_1;
+        public GameObject b_Comprado_1;
+        public Image imagenArma1;
+        public String dineroMuestra;
+    }
+
+
+
+
+
+
     [Header("Producto#1:")]
     public GameObject armas1;
     public Text D1_nombre;
@@ -303,46 +320,47 @@ public class CodigoTienda : MonoBehaviour
 
     void Start()
     {
+        int precio = 0000;
 
         //-------------------------------------------------------------------------------
         Arma primeraArma = armas1.GetComponent<Arma>();
         D1_nombre.text = primeraArma.nombre;
         D1_descripcion.text = "Atk: " + primeraArma.ataque + "\n"
                              + "Elem: " + primeraArma.elemento;
-        D1_precio.text = "$" + primeraArma.precio;
-        dineroMuestra1 = primeraArma.precio;
+        D1_precio.text = "$" +precio;
+        dineroMuestra1 = ""+precio;
         imagenArma1.sprite =primeraArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma segundoArma = armas2.GetComponent<Arma>();
         D2_nombre.text = segundoArma.nombre;
         D2_descripcion.text = "Atk: " + segundoArma.ataque + "\n"
                              + "Elem: " + segundoArma.elemento;
-        D2_precio.text = "$" + segundoArma.precio;
-        dineroMuestra2 = segundoArma.precio;
+        D2_precio.text = "$" + precio;
+        dineroMuestra2 = ""+precio;
         imagenArma2.sprite = segundoArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma terceroArma = armas3.GetComponent<Arma>();
         D3_nombre.text = terceroArma.nombre;
         D3_descripcion.text = "Atk: " + terceroArma.ataque + "\n"
                              + "Elem: " + terceroArma.elemento;
-        D3_precio.text = "$" + terceroArma.precio;
-        dineroMuestra3 = terceroArma.precio;
+        D3_precio.text = "$" + precio;
+        dineroMuestra3 = ""+precio;
         imagenArma3.sprite = terceroArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma cuartoArma = armas4.GetComponent<Arma>();
         D4_nombre.text = cuartoArma.nombre;
         D4_descripcion.text = "Atk: " + cuartoArma.ataque + "\n"
                              + "Elem: " + cuartoArma.elemento;
-        D4_precio.text = "$" + cuartoArma.precio;
-        dineroMuestra4 = cuartoArma.precio;
+        D4_precio.text = "$" + precio;
+        dineroMuestra4 = ""+precio;
         imagenArma4.sprite = cuartoArma.imagenArma;
         //-------------------------------------------------------------------------------
         Arma quintoArma = armas5.GetComponent<Arma>();
         D5_nombre.text = quintoArma.nombre;
         D5_descripcion.text = "Atk: " + quintoArma.ataque + "\n"
                              + "Elem: " + quintoArma.elemento;
-        D5_precio.text = "$" + quintoArma.precio;
-        dineroMuestra5 = quintoArma.precio;
+        D5_precio.text = "$" + precio;
+        dineroMuestra5 = ""+precio;
         imagenArma5.sprite = quintoArma.imagenArma;
     }
 

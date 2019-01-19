@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1102411599808160369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1460618743477708, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInstance: {fileID: 1102411600285654160}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1102411599808160371}
+  - component: {fileID: 1102411599808160370}
+  m_Layer: 0
+  m_Name: BaseDeArmas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1102411599808160371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 4108078672923722, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInstance: {fileID: 1102411600285654160}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102411599808160369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.58483, y: 88.944046, z: 19.71875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1102411599808160370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114619296222472594, guid: 846431f107155ad4cac4bd95f5c44e89,
+    type: 2}
+  m_PrefabInstance: {fileID: 1102411600285654160}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102411599808160369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf5fdb2624643394c90be34ba11c761b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  armas:
+  - arma: {fileID: 1053007237682308, guid: 8a09698bb74585849b2373687c60be46, type: 3}
+    activ: 0
+    lvl: 2
+    index: 0
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 100
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1619967392673246, guid: 7815cd21bb32bf244be36cc283f1dd73, type: 3}
+    activ: 0
+    lvl: 1
+    index: 0
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1387491477515614, guid: 90d3cd93e02d34d429d6151e46f25b0b, type: 3}
+    activ: 1
+    lvl: 1
+    index: 0
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1776420767694710, guid: ddd7ceec04a4d43418db06222bdc0ce4, type: 3}
+    activ: 1
+    lvl: 1
+    index: 0
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+  - arma: {fileID: 1808402761191080, guid: a4e0be36e449b6c419cd07022cc43519, type: 3}
+    activ: 1
+    lvl: 10
+    index: 0
+    niveles:
+    - ataque: 1234
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 0
+      precio: 0
+    - ataque: 999
+      precio: 0
+--- !u!1001 &1102411600285654160
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.x
+      value: -75.58483
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 88.944046
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.z
+      value: 19.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[2].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[3].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].niveles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[0].niveles.Array.data[1].ataque
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[0].lvl
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[2].arma
+      value: 
+      objectReference: {fileID: 1387491477515614, guid: 90d3cd93e02d34d429d6151e46f25b0b,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[2].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[2].lvl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[2].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[3].arma
+      value: 
+      objectReference: {fileID: 1776420767694710, guid: ddd7ceec04a4d43418db06222bdc0ce4,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[3].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[3].lvl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[3].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].arma
+      value: 
+      objectReference: {fileID: 1808402761191080, guid: a4e0be36e449b6c419cd07022cc43519,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].lvl
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].niveles.Array.data[0].ataque
+      value: 1234
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[0].arma
+      value: 
+      objectReference: {fileID: 1053007237682308, guid: 8a09698bb74585849b2373687c60be46,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[4].niveles.Array.data[9].ataque
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[0].activ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: armas.Array.data[1].activ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}

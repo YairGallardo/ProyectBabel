@@ -39,6 +39,37 @@ public class ControladorBaseDeArmas : MonoBehaviour {
         return retorno;
     }
 
+    public DatosDeArma[] getEnVenta()
+    {
+        int cantArmas = 0;
+        foreach (DatosDeArma datos in armas)
+        {
+            if (!datos.activ)
+            {
+                cantArmas++;
+            }
+        }
+        Debug.Log(cantArmas);
+        DatosDeArma[] retorno = new DatosDeArma[cantArmas];
+        int index = 0;
+        foreach (DatosDeArma datos in armas)
+        {
+            Debug.Log("index " + index);
+            if (!datos.activ)
+            {
+                retorno[index] = datos;
+                index++;
+                Debug.Log("agregado");
+            }
+        }
+        return retorno;
+    }
+
+
+
+
+
+
     public void Actualizar(int index) {
         /// actualiza el nivel actual del arma y sus estadisticas
     }
