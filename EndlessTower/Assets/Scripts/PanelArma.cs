@@ -14,17 +14,58 @@ public class PanelArma : MonoBehaviour
     public GameObject b_Comprar;
     public GameObject b_Comprado;
     public Image imagenArma;
-    public string dineroMuestra;
     public int codigoArma;
 
-    public void comprarArma() {
-        //codigo al apretar el boton
-        // if (verificar dinero)
-        // Cambiar estado del arma a comprada 
-        // restar dinero
-        //
-        //else
-        // mensaje de error
+    public void comprarArma()
+    {
+        if (DatosPersistentes.dinero >= precio)
+        {
+            DatosPersistentes.dinero -= precio;
+            ControladorBaseDeArmas DB = FindObjectOfType<ControladorBaseDeArmas>();
+            DB.Actualizar(codigoArma);
+            TiendaGeneral tienda = FindObjectOfType<TiendaGeneral>();
+            tienda.recargar();
+        }
+        else
+        {
+
+            TiendaGeneral tienda = FindObjectOfType<TiendaGeneral>();
+            tienda.mensajeError.SetActive(true);
+        }
+
+
+        //CargaDeDatos.Guardar();
+
+
     }
+
+
+    public void comprarMejora()
+    {
+        if (DatosPersistentes.dinero >= precio)
+        {
+            DatosPersistentes.dinero -= precio;
+            ControladorBaseDeArmas DB = FindObjectOfType<ControladorBaseDeArmas>();
+            DB.ActualizarNivel(codigoArma);
+            TiendaGeneral tienda = FindObjectOfType<TiendaGeneral>();
+            tienda.MostrarMejoras();
+        }
+        else
+        {
+
+            TiendaGeneral tienda = FindObjectOfType<TiendaGeneral>();
+            tienda.mensajeError.SetActive(true);
+        }
+        //CargaDeDatos.Guardar();
+    }
+
+
+
+
+
+
+
+
+
 
 }

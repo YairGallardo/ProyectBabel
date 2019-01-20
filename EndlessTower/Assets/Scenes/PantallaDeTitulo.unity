@@ -1312,5 +1312,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[4].lvl
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[2].activ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[3].activ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[4].activ
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[0].activ
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[0].lvl
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[0].index
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[1].index
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[2].index
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[3].index
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1102411599808160370, guid: ffac7cf606b69aa49ac8422ded219f4a,
+        type: 3}
+      propertyPath: armas.Array.data[4].index
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffac7cf606b69aa49ac8422ded219f4a, type: 3}

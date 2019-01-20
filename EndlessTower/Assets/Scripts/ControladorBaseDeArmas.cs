@@ -65,21 +65,52 @@ public class ControladorBaseDeArmas : MonoBehaviour {
         return retorno;
     }
 
-
-
-
-
-
-    public void Actualizar(int index) {
-        /// actualiza el nivel actual del arma y sus estadisticas
+    public DatosDeArma[] getMejoras()
+    {
+        int cantArmas = 0;
+        foreach (DatosDeArma datos in armas)
+        {
+            if (datos.activ && datos.lvl<10)
+            {
+                cantArmas++;
+            }
+        }
+        Debug.Log(cantArmas);
+        DatosDeArma[] retorno = new DatosDeArma[cantArmas];
+        int index = 0;
+        foreach (DatosDeArma datos in armas)
+        {
+            Debug.Log("index " + index);
+            if (datos.activ && datos.lvl < 10)
+            {
+                retorno[index] = datos;
+                index++;
+            }
+        }
+        return retorno;
     }
 
-    public void guardar() {
-        
+
+
+
+
+
+    public void Actualizar(int index)
+    {
+        armas[index].activ = true;
+        guardar();
     }
 
-    public void cargar() {
 
+    public void ActualizarNivel(int index)
+    {
+        armas[index].lvl += 1;
+        Arma dataArma = armas[index].arma.GetComponent<Arma>();
+        Especificaciones[] niveles = armas[index].niveles;
+        int ataque = niveles[armas[index].lvl - 1].ataque;
+        dataArma.ataque = ataque;
+
+        guardar();
     }
 
     public void cargaInicial() {
@@ -91,10 +122,20 @@ public class ControladorBaseDeArmas : MonoBehaviour {
             dataArma.ataque = ataque;
         }
     }
-    
+
+
+    public void guardar()
+    {
+
+    }
+
+    public void cargar()
+    {
+
+    }
 
 
 
 
-    
+
 }
