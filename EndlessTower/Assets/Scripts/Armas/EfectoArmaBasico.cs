@@ -8,7 +8,7 @@ public class EfectoArmaBasico : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy") {
-            other.gameObject.GetComponent<Enemigo>().recibirDaño(daño);
+            other.gameObject.GetComponent<IEnemy>().recibirDaño(daño);
         }
     }
 }

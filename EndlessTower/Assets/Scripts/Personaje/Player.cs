@@ -11,6 +11,8 @@ public class Player : MonoBehaviour {
     public float cdAtaqueBasico;
     public float cdAtaqueEspecial;
     public Transform posicionEspada;
+    public GameObject areaArma;
+
 
     [Header("ElementosUI")]
     public Slider sliderVida;
@@ -95,9 +97,8 @@ public class Player : MonoBehaviour {
     public void BasicAtack() {
 
         if (cdBasicoActual >= cdAtaqueBasico) {
-            myArma.ataqueInicio();
             cdBasicoActual = 0;
-            //audio.Play();
+            areaArma.SetActive( true);
             anim.SetBool("bAtack", true);
             StartCoroutine("stopBAtack");
         }
@@ -131,8 +132,8 @@ public class Player : MonoBehaviour {
     {
         move.enabled = false;
         yield return new WaitForSeconds(.5f);
+        areaArma.SetActive(false);
         anim.SetBool("bAtack", false);
-        myArma.ataqueFin();
         move.enabled = true;
 
     }
@@ -150,41 +151,29 @@ public class Player : MonoBehaviour {
         return jugadorMuerto;
     }
 
-    public void recibirDaño(int daño)
-    {
+    public void recibirDaño(int daño){
         vidaActual -= daño;
         sliderVida.value = vidaActual;
-
-
         if (vidaActual <= 0)
         {
-            //destruir;
             PlayerDie();
         }
     }
 
 
-    void equiparArma()
-    {
+    void equiparArma() {
         Debug.Log("Equipando arma");
-
-        if (DatosPersistentes.arma != null)
-        {
-            if (posicionEspada.childCount > 0)
-            {
-                foreach (Transform child in posicionEspada)
-                {
+        if (DatosPersistentes.arma != null){
+            if (posicionEspada.childCount > 0) {
+                foreach (Transform child in posicionEspada){
                     GameObject.Destroy(child.gameObject);
                 }
             }
 
-
             var armaTmp = Instantiate(DatosPersistentes.arma, posicionEspada.position, posicionEspada.rotation);
             Debug.Log(armaTmp.name);
             armaTmp.transform.parent = posicionEspada;
-        }
-        else
-        {
+        }else{
             Debug.Log("No hay arma en los datos persistentes");
         }
     }

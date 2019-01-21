@@ -16,34 +16,11 @@ public class Arma : MonoBehaviour {
     public GameObject efectoBasico;                 // Particulas que muestran la traza del arma (no se si dejarlo)
     public GameObject efectoAtaqueEspecial;         // Efecto se genera al realizar el ataque especial
 
-    public void ataqueInicio(){
-        gameObject.GetComponent<BoxCollider>().enabled = true;
-        efectoBasico.SetActive(true);
-    }
-
-
-    public void ataqueFin(){
-        gameObject.GetComponent<BoxCollider>().enabled = false;
-        efectoBasico.SetActive(false);
-    }
-
     public void ataqueEspecial() {
         Debug.Log("ataque EN ARMAAAA");
         GameObject tmp = Instantiate(efectoAtaqueEspecial, FindObjectOfType<Player>().transform.position, efectoAtaqueEspecial.transform.rotation);
-            Destroy(tmp,5f);
+        tmp.GetComponent<EfectoArmaBasico>().daño = ataque / 4;
+        Destroy(tmp,5f);
     }
-
-
-    private void OnTriggerEnter(Collider col){
-        if (col.gameObject.tag == "Enemy"){
-            Enemigo tmp = col.gameObject.GetComponent<Enemigo>();
-            tmp.recibirDaño(ataque);
-        }
-    }
-
-
-
-
-
 
 }

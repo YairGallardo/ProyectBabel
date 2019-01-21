@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\3D obj\amusedART\Mushroom_Monster\Script\MushroomMon_Ani_Test.cs" />
+    <Compile Include="Assets\3D obj\amusedART\StoneMonster\Script\Animation_Test.cs" />
+    <Compile Include="Assets\destroy.cs" />
     <Compile Include="Assets\Download assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCameraLogic.cs" />
     <Compile Include="Assets\Download assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieCharacterControl.cs" />
     <Compile Include="Assets\Download assets\Supercyan Character Pack Zombie Sample\Scripts\ZombieFree.cs" />
@@ -70,6 +73,7 @@
     <Compile Include="Assets\Download assets\Virtual Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\ActualizarBotin.cs" />
     <Compile Include="Assets\Scripts\Arma.cs" />
+    <Compile Include="Assets\Scripts\Armas\Ataque.cs" />
     <Compile Include="Assets\Scripts\Armas\EfectoArmaBasico.cs" />
     <Compile Include="Assets\Scripts\CargaDeDatos.cs" />
     <Compile Include="Assets\Scripts\CodigoTienda.cs" />
@@ -86,6 +90,10 @@
     <Compile Include="Assets\Scripts\DatosPersistentes.cs" />
     <Compile Include="Assets\Scripts\Enemigos\BasicEnemy.cs" />
     <Compile Include="Assets\Scripts\Enemigos\Enemigo.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\EnemigoFlama.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\EnemigoHongo.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\IEnemy.cs" />
+    <Compile Include="Assets\Scripts\Enemigos\VarsEnemy.cs" />
     <Compile Include="Assets\Scripts\GuardadoyCarga\PlayerData.cs" />
     <Compile Include="Assets\Scripts\GuardadoyCarga\SaveSystem.cs" />
     <Compile Include="Assets\Scripts\LookAtCamera.cs" />

@@ -5,8 +5,17 @@ using UnityEngine.UI;
 
 public class ActualizarBotin : MonoBehaviour {
     public Text t_botin;
+    public bool derrota = false;
 
 	void Update () {
-        t_botin.text = FindObjectOfType<ControladorNivel>().botinAcumulado+"";
+
+        if (derrota)
+        {
+            t_botin.text = FindObjectOfType<ControladorNivel>().botinAcumulado/10 + "";
+        }
+        else {
+            t_botin.text = FindObjectOfType<ControladorNivel>().botinAcumulado + "";
+        }
+        
 	}
 }

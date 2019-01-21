@@ -15,10 +15,6 @@ public class Enemigo : MonoBehaviour {
     public GameObject dañoVisual;
 
 
-
-
-
-
     public void recibirDaño(int daño) {
         dañoVisual.transform.GetChild(0).gameObject.GetComponent<Text>().text = daño + "";
         var tmpDaño = Instantiate(dañoVisual,transform.position,dañoVisual.transform.rotation);
@@ -28,8 +24,12 @@ public class Enemigo : MonoBehaviour {
         vidaActual -= daño;
         sbarraDeVida.value = vidaActual;
         if (vidaActual <= 0) {
-            FindObjectOfType<ControladorNivel>().botinAcumulado += recompenza;
-            Destroy(gameObject);
+            muerte();
         }
+    }
+
+    public void muerte() {
+        FindObjectOfType<ControladorNivel>().botinAcumulado += recompenza;
+        Destroy(gameObject);
     }
 }

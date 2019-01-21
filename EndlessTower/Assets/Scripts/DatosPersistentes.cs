@@ -12,10 +12,13 @@ public class DatosPersistentes : MonoBehaviour {
     public static int pisoMaximo;
     public static bool cargada = false;
 
+    public int dineroPrueba;
+
     void Awake(){
         if (!cargada) {
             arma = armaTest;
             cargada = true;
+            dinero = dineroPrueba;
         }
         
 

@@ -85,15 +85,18 @@ public class ControladorNivel : MonoBehaviour {
     }
 
     void nivelCompletado() {
+        DatosPersistentes.dinero += botinAcumulado;
         controladorMenus.activarMenuVictoria();
     }
 
     void tiempoNivelAgotado() {
+        DatosPersistentes.dinero += botinAcumulado/10;
         controladorMenus.activarMenuDerrota();
     }
 
     void jugadorDerrotado()
     {
+        DatosPersistentes.dinero += botinAcumulado / 10;
         controladorMenus.activarMenuDerrota();
     }
 
