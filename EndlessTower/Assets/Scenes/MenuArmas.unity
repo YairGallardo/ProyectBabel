@@ -1592,7 +1592,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7d4e97bc0cfedd049ac64f71c85cfb60, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 734172ae7d8b1794e9717191cdc7b597, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.2
   m_Pitch: 1
@@ -1732,12 +1732,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0903562e1fff62a4d8ee8edbbf934aa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93776f710862a2f49adc0ae775222bb9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 10.24, y: 5.76}
+  m_Size: {x: 8, y: 6}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1751,8 +1751,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456730333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.38, y: -0.01, z: 2.9504917}
-  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
+  m_LocalPosition: {x: -2.509, y: -0.025, z: 2.9504917}
+  m_LocalScale: {x: 0.9093866, y: 0.6952631, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
