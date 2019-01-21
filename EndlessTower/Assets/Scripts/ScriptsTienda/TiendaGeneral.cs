@@ -7,7 +7,7 @@ public class TiendaGeneral : MonoBehaviour
     public GameObject panelArmas;
     public GameObject panelArmasMejora;
     public GameObject panelScroll;
-    public int posInicial = -1470;
+    public int posInicial = -980;
     public int saltoPos = 400;
     private int posActual;
     DatosDeArma[] armas;
